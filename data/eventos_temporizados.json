@@ -1,0 +1,31 @@
+[
+  {
+    "id": "evt_riada_area5",
+    "nombre": "La riada de la Guarida Bocapeñasco",
+    "lugar_id": "loc_cragmaw_paso_superior",
+    "tipo": "secuencia",
+    "disparador": "El goblin del puente del área 5 da la alarma a los goblins del área 7",
+    "fases": [
+      {
+        "orden": 1,
+        "turno": 1,
+        "efecto": "Los goblins del área 7 empiezan a golpear los soportes de los muros.",
+        "condicion": null
+      },
+      {
+        "orden": 2,
+        "turno": 2,
+        "efecto": "Una riada baja desde el área 7 hasta el área 1. Todas las criaturas en el túnel (área 4 y escalones al área 3) deben hacer salvación de Destreza CD 10 o ser arrastradas. Si fallan, salvación de Fuerza CD 15 para agarrarse. Si fallan, caen bocabajo y son arrastradas al área 1, sufriendo 1d6 contundente.",
+        "condicion": null
+      },
+      {
+        "orden": 3,
+        "turno": null,
+        "efecto": "Los goblins del área 7 pueden liberar una segunda riada, pero solo si el goblin del puente lo ordena tras ver que la primera no eliminó a los intrusos.",
+        "condicion": "goblin_puente_vivo"
+      }
+    ],
+    "estado": "no_iniciado",
+    "notas_dm": "El goblin del puente espera a ver si la primera riada se ha deshecho de todos los intrusos antes de llamar a sus compañeros para que liberen la segunda. Las criaturas en el puente del área 5 están a salvo, al igual que las que escalaron los muros."
+  }
+]

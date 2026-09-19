@@ -1,0 +1,158 @@
+[
+  {
+    "id": "pista_gundren_mapa",
+    "nombre": "Gundren tenía un mapa de la Cueva del Oleaje",
+    "contenido": "Gundren tenía un mapa que mostraba la ubicación secreta de la Cueva del Oleaje, pero los goblins se lo quitaron cuando le capturaron. Sildar cree que Klarg envió al enano y el mapa al jefe de los Bocapeñasco en el Castillo Bocapeñasco.",
+    "tipo": "objeto",
+    "fuente_ids": [
+      "npc_sildar"
+    ],
+    "revelada": false,
+    "requiere": [
+      "ser_rescatado_y_preguntar"
+    ],
+    "conduce_a": [
+      "pista_cueva_oleaje",
+      "loc_castillo_bocapenasco"
+    ],
+    "tags": [
+      "mapa",
+      "gundren",
+      "sildar"
+    ]
+  },
+  {
+    "id": "pista_iarno_desaparecido",
+    "nombre": "Iarno Albrek desapareció en Phandalin",
+    "contenido": "El contacto de Sildar en Phandalin es un mago humano llamado Iarno Albrek. Viajó al pueblo hace dos meses para poner orden. La Alianza de los Señores no ha recibido noticia alguna de él.",
+    "tipo": "evento",
+    "fuente_ids": [
+      "npc_sildar"
+    ],
+    "revelada": false,
+    "requiere": [
+      "ser_rescatado_y_preguntar_por_motivos"
+    ],
+    "conduce_a": [
+      "quest_buscar_iarno"
+    ],
+    "tags": [
+      "iarno",
+      "mago",
+      "phandalin"
+    ]
+  },
+  {
+    "id": "pista_cueva_oleaje",
+    "nombre": "La Cueva del Oleaje es la mina perdida",
+    "contenido": "Gundren y sus hermanos descubrieron la entrada a la Cueva del Oleaje, lugar de las minas del Pacto de Phandelver. Un mapa muestra su ubicación secreta.",
+    "tipo": "ubicacion",
+    "fuente_ids": [
+      "npc_sildar",
+      "npc_elmar_barthen"
+    ],
+    "revelada": false,
+    "requiere": [
+      "ser_rescatado_y_preguntar"
+    ],
+    "conduce_a": [
+      "quest_cueva_oleaje"
+    ],
+    "tags": [
+      "mina",
+      "cueva",
+      "phandelver"
+    ]
+  },
+  {
+    "id": "pista_goblins_cragmaw",
+    "nombre": "Los goblins conocen la ubicación del Castillo Bocapeñasco",
+    "contenido": "Los goblins capturados o hechizados pueden revelar que su líder responde ante el Rey Grol, que mora en el Castillo Bocapeñasco, a unas 20 millas al noreste de la cueva, en el bosque de Neverwinter.",
+    "tipo": "ubicacion",
+    "fuente_ids": [
+      "npc_goblin_capturado",
+      "npc_klarg",
+      "npc_yeemik"
+    ],
+    "revelada": false,
+    "requiere": [
+      "capturar_o_hechizar_goblin"
+    ],
+    "conduce_a": [
+      "loc_castillo_bocapenasco",
+      "quest_castillo_bocapenasco"
+    ],
+    "tags": [
+      "goblins",
+      "castillo",
+      "ubicacion"
+    ]
+  },
+  {
+    "id": "pista_ordenes_rey_grol",
+    "nombre": "La Araña Negra pagó por capturar a Gundren",
+    "contenido": "Klarg recibió a un mensajero goblin enviado por el Rey Grol hace unos días. Le dijo que alguien llamado la Araña Negra estaba pagando a los Bocapeñasco para que acechasen al enano Gundren Buscarrocas, lo capturasen y se lo llevasen junto con cualquier cosa que llevase encima ante el Rey Grol.",
+    "tipo": "identidad",
+    "fuente_ids": [
+      "npc_klarg",
+      "npc_goblin_capturado"
+    ],
+    "revelada": false,
+    "requiere": [
+      "capturar_o_hechizar"
+    ],
+    "conduce_a": [
+      "fac_arana_negra",
+      "quest_castillo_bocapenasco"
+    ],
+    "tags": [
+      "arana_negra",
+      "gundren",
+      "rey_grol"
+    ]
+  },
+  {
+    "id": "pista_sildar_prisionero",
+    "nombre": "Sildar está prisionero en la gruta comedor",
+    "contenido": "El acompañante humano del enano se encuentra retenido en la gruta comedor (área 6).",
+    "tipo": "ubicacion",
+    "fuente_ids": [
+      "npc_goblin_capturado"
+    ],
+    "revelada": false,
+    "requiere": [
+      "capturar_o_hechizar_goblin"
+    ],
+    "conduce_a": [
+      "loc_cragmaw_madriguera",
+      "npc_sildar"
+    ],
+    "tags": [
+      "sildar",
+      "prisionero",
+      "ubicacion"
+    ]
+  },
+  {
+    "id": "pista_klarg_debilidad",
+    "nombre": "Klarg maltrata a sus subordinados",
+    "contenido": "Los goblins bajo el mando de Klarg llevan un tiempo resentidos por su maltrato. Yeemik quiere expulsarle y convertirse en jefe.",
+    "tipo": "rumor",
+    "fuente_ids": [
+      "npc_yeemik",
+      "npc_goblin_capturado"
+    ],
+    "revelada": false,
+    "requiere": [
+      "negociar_con_yeemik"
+    ],
+    "conduce_a": [
+      "quest_rescatar_gundren"
+    ],
+    "tags": [
+      "klarg",
+      "yeemik",
+      "rumor"
+    ]
+  }
+]

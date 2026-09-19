@@ -1,0 +1,649 @@
+[
+  {
+    "id": "loc_sendero_triboar",
+    "nombre": "Sendero de Triboar",
+    "tipo": "region",
+    "padre_id": null,
+    "descubierto": true,
+    "nivel_visibilidad": "explorado",
+    "descripcion_jugadores": "Una franja de estribaciones y colinas poco boscosas entre las Montañas de la Espada y el Bosque de Neverwinter. El viejo sendero va desde Triboar, al este, serpenteando hacia el oeste unas cien millas a través de la aldea abandonada de Conyberry, y pasa al norte de Phandalin en su camino hacia la Gran Carretera.",
+    "descripcion_dm": "Región de viaje. Los personajes viajan por aquí durante la Parte 1. El Sendero no es seguro: bestias, bandidos y monstruos. Usar tabla de Encuentros en la Naturaleza.",
+    "iluminacion": "luz_brillante",
+    "terreno": "tierra",
+    "conexiones": [
+      {
+        "destino_id": "loc_sendero_triboar_emboscada",
+        "tipo": "sendero",
+        "obstaculo_id": null,
+        "requiere": []
+      },
+      {
+        "destino_id": "loc_sendero_goblin",
+        "tipo": "sendero_oculto",
+        "obstaculo_id": null,
+        "requiere": [
+          "flag_emboscada_goblin_resuelta"
+        ]
+      },
+      {
+        "destino_id": "loc_phandalin",
+        "tipo": "sendero",
+        "obstaculo_id": null,
+        "requiere": []
+      }
+    ],
+    "obstaculos": [],
+    "enemigos_presentes": [],
+    "npcs_presentes": [],
+    "objetos_presentes": [],
+    "triggers": [],
+    "eventos_temporizados": [],
+    "tablas_aleatorias": [
+      "tab_encuentros_naturaleza"
+    ],
+    "mapa_vtt": {
+      "mapa_id": "map_region_phandalin",
+      "zona_id": "zone_region_sendero"
+    },
+    "musica_ambiente": "wilderness_travel",
+    "tags": [
+      "region",
+      "viaje",
+      "exterior"
+    ]
+  },
+  {
+    "id": "loc_sendero_triboar_emboscada",
+    "nombre": "Lugar de la emboscada goblin",
+    "tipo": "exterior",
+    "padre_id": "loc_sendero_triboar",
+    "descubierto": true,
+    "nivel_visibilidad": "visto",
+    "descripcion_jugadores": "Lleváis en el Sendero de Triboar sobre medio día. Mientras os acercáis a un recodo, alcanzáis a ver dos caballos muertos tendidos en el suelo a unos 50 pies por delante de vosotros, bloqueando el paso. Cada uno tiene varias flechas de penachos negros que sobresalen de ellos. En este lugar los bosques se cierran en torno a la senda, con un empinado terraplén y densos matorrales a cada lado.",
+    "descripcion_dm": "Punto de la emboscada. Dos caballos muertos de Gundren y Sildar. Alforjas saqueadas, estuche de mapas de cuero vacío. Cuatro goblins escondidos en el bosque, dos a cada lado del camino, esperando a que alguien se aproxime a los cadáveres.",
+    "iluminacion": "luz_brillante",
+    "terreno": "tierra",
+    "conexiones": [
+      {
+        "destino_id": "loc_sendero_triboar",
+        "tipo": "sendero",
+        "obstaculo_id": null,
+        "requiere": []
+      },
+      {
+        "destino_id": "loc_sendero_goblin",
+        "tipo": "sendero_oculto",
+        "obstaculo_id": null,
+        "requiere": [
+          "flag_emboscada_goblin_resuelta"
+        ]
+      }
+    ],
+    "obstaculos": [],
+    "enemigos_presentes": [
+      "enc_emboscada_goblin"
+    ],
+    "npcs_presentes": [],
+    "objetos_presentes": [],
+    "triggers": [],
+    "eventos_temporizados": [],
+    "tablas_aleatorias": [],
+    "mapa_vtt": {
+      "mapa_id": "map_road_to_phandalin",
+      "zona_id": "zone_emboscada"
+    },
+    "musica_ambiente": "ambush_tension",
+    "tags": [
+      "emboscada",
+      "exterior",
+      "sendero"
+    ]
+  },
+  {
+    "id": "loc_sendero_goblin",
+    "nombre": "El sendero goblin",
+    "tipo": "exterior",
+    "padre_id": "loc_sendero_triboar",
+    "descubierto": false,
+    "nivel_visibilidad": "oculto",
+    "descripcion_jugadores": "Un sendero oculto detrás de los matorrales en el lado norte de la carretera lleva hacia el noroeste. Avanza cinco millas en dirección noroeste y termina en la guarida de los Bocapeñasco.",
+    "descripcion_dm": "Sendero de 5 millas desde la emboscada hasta la Guarida Bocapeñasco. Los goblins han preparado dos trampas: un lazo (a 10 min de camino) y un foso camuflado (a 20 min). Un personaje con Sabiduría (Supervivencia) CD 10 reconoce rastros de ~12 goblins y dos cuerpos humanos arrastrados.",
+    "iluminacion": "luz_brillante",
+    "terreno": "tierra",
+    "conexiones": [
+      {
+        "destino_id": "loc_sendero_triboar",
+        "tipo": "sendero_oculto",
+        "obstaculo_id": null,
+        "requiere": []
+      },
+      {
+        "destino_id": "loc_sendero_triboar_emboscada",
+        "tipo": "sendero_oculto",
+        "obstaculo_id": null,
+        "requiere": []
+      },
+      {
+        "destino_id": "loc_cragmaw_entrada",
+        "tipo": "sendero",
+        "obstaculo_id": null,
+        "requiere": []
+      },
+      {
+        "destino_id": "loc_cragmaw_hideout",
+        "tipo": "sendero",
+        "obstaculo_id": null,
+        "requiere": []
+      }
+    ],
+    "obstaculos": [
+      "obs_trampa_lazo",
+      "obs_trampa_foso"
+    ],
+    "enemigos_presentes": [],
+    "npcs_presentes": [],
+    "objetos_presentes": [],
+    "triggers": [],
+    "eventos_temporizados": [],
+    "tablas_aleatorias": [],
+    "mapa_vtt": {
+      "mapa_id": "map_road_to_phandalin",
+      "zona_id": "zone_sendero_goblin"
+    },
+    "musica_ambiente": "forest_trail",
+    "tags": [
+      "sendero",
+      "trampas",
+      "exterior"
+    ]
+  },
+  {
+    "id": "loc_cragmaw_hideout",
+    "nombre": "Guarida Bocapeñasco",
+    "tipo": "habitacion_dungeon",
+    "padre_id": "loc_sendero_goblin",
+    "descubierto": false,
+    "nivel_visibilidad": "oculto",
+    "descripcion_jugadores": "Una gran cueva que se abre en la falda de una colina. Un estrecho riachuelo surge de la entrada, enmarcada por densos arbustos de brezo.",
+    "descripcion_dm": "Mazmorra de 8 zonas. Tribu Bocapeñasco establecida aquí para hostigar el tráfico del Sendero de Triboar. El líder es Klarg el osgo, con órdenes del Rey Grol de interceptar a Gundren.",
+    "iluminacion": "oscuridad",
+    "terreno": "piedra",
+    "conexiones": [
+      {
+        "destino_id": "loc_sendero_goblin",
+        "tipo": "sendero",
+        "obstaculo_id": null,
+        "requiere": []
+      }
+    ],
+    "obstaculos": [],
+    "enemigos_presentes": [],
+    "npcs_presentes": [],
+    "objetos_presentes": [],
+    "triggers": [],
+    "eventos_temporizados": [],
+    "tablas_aleatorias": [],
+    "mapa_vtt": {
+      "mapa_id": "map_cragmaw_hideout",
+      "zona_id": null
+    },
+    "musica_ambiente": "cave_dungeon",
+    "tags": [
+      "mazmorra",
+      "cueva",
+      "goblins"
+    ]
+  },
+  {
+    "id": "loc_cragmaw_entrada",
+    "nombre": "Área 1: Entrada de la Cueva",
+    "tipo": "habitacion_dungeon",
+    "padre_id": "loc_cragmaw_hideout",
+    "descubierto": false,
+    "nivel_visibilidad": "oculto",
+    "descripcion_jugadores": "Siguiendo el rastro de los goblins, os encontráis con una gran cueva que se abre en la falda de una colina a cinco millas de donde tuvo lugar la emboscada. Un estrecho riachuelo surge de la entrada de la cueva, que está enmarcada por densos arbustos de brezo. Un estrecho camino seco discurre a la derecha de la corriente adentrándose en la caverna.",
+    "descripcion_dm": "Zona al aire libre. La zona de arbustos del área 2 es impenetrable desde el lado oeste de la corriente. Los goblins del área 2 montan guardia aquí pero están distraídos. Si los PJs hacen ruido, los goblins del área 2 les atacan a través de los arbustos con cobertura de tres cuartos.",
+    "iluminacion": "luz_brillante",
+    "terreno": "tierra",
+    "conexiones": [
+      {
+        "destino_id": "loc_sendero_goblin",
+        "tipo": "sendero",
+        "obstaculo_id": null,
+        "requiere": []
+      },
+      {
+        "destino_id": "loc_cragmaw_puesto_goblin",
+        "tipo": "paso_riachuelo",
+        "obstaculo_id": null,
+        "requiere": []
+      }
+    ],
+    "obstaculos": [],
+    "enemigos_presentes": [],
+    "npcs_presentes": [],
+    "objetos_presentes": [],
+    "triggers": [
+      "trg_aviso_goblins_area2"
+    ],
+    "eventos_temporizados": [],
+    "tablas_aleatorias": [],
+    "mapa_vtt": {
+      "mapa_id": "map_cragmaw_hideout",
+      "zona_id": "zone_cragmaw_01"
+    },
+    "musica_ambiente": "cave_entrance_ambient",
+    "tags": [
+      "entrada",
+      "exterior",
+      "riachuelo"
+    ]
+  },
+  {
+    "id": "loc_cragmaw_puesto_goblin",
+    "nombre": "Área 2: El Puesto Goblin",
+    "tipo": "habitacion_dungeon",
+    "padre_id": "loc_cragmaw_hideout",
+    "descubierto": false,
+    "nivel_visibilidad": "oculto",
+    "descripcion_jugadores": "En el lado este de la corriente que fluye desde la entrada de la cueva, una pequeña zona entre los arbustos de brezo ha sido vaciada para formar un puesto de vigilancia. Mediante tablones de madera que los aplanan han generado así un espacio para los guardas donde pueden mantenerse ocultos y vigilar la zona, ¡incluyendo un par de goblins que se encuentran rondando por allí ahora mismo!",
+    "descripcion_dm": "Dos goblins apostados. Si descubren a los intrusos en el área 1, abren fuego con arcos a través de los arbustos. Si no, avistan a los PJs al oír el chapoteo del riachuelo. Los arbustos son terreno difícil y dan media cobertura. Los PJs que se muevan con cuidado pueden sorprender a los goblins con Destreza (Sigilo) contra Percepción Pasiva de los goblins.",
+    "iluminacion": "luz_brillante",
+    "terreno": "tierra",
+    "conexiones": [
+      {
+        "destino_id": "loc_cragmaw_entrada",
+        "tipo": "paso_riachuelo",
+        "obstaculo_id": null,
+        "requiere": []
+      },
+      {
+        "destino_id": "loc_cragmaw_perrera",
+        "tipo": "escalones",
+        "obstaculo_id": null,
+        "requiere": []
+      }
+    ],
+    "obstaculos": [],
+    "enemigos_presentes": [
+      "enc_goblins_area2"
+    ],
+    "npcs_presentes": [],
+    "objetos_presentes": [],
+    "triggers": [],
+    "eventos_temporizados": [],
+    "tablas_aleatorias": [],
+    "mapa_vtt": {
+      "mapa_id": "map_cragmaw_hideout",
+      "zona_id": "zone_cragmaw_02"
+    },
+    "musica_ambiente": "cave_ambush",
+    "tags": [
+      "guardia",
+      "goblins",
+      "arbustos"
+    ]
+  },
+  {
+    "id": "loc_cragmaw_perrera",
+    "nombre": "Área 3: La Perrera",
+    "tipo": "habitacion_dungeon",
+    "padre_id": "loc_cragmaw_hideout",
+    "descubierto": false,
+    "nivel_visibilidad": "oculto",
+    "descripcion_jugadores": "Justo al pasar la entrada de la cueva, unos pocos escalones desiguales de piedra llevan hasta una pequeña gruta en el lado este del pasadizo. La cueva se estrecha hasta una pequeña fisura en su extremo final, y está llena con el hedor de animales. El sonido de cadenas moviéndose y gruñidos salvajes llega a vuestros oídos de tres lobos que se encuentran encadenados en el interior de la apertura. La cadena de cada lobo lleva hasta una vara de hierro clavada en la base de una estalagmita.",
+    "descripcion_dm": "Tres lobos sarnosos encadenados. No pueden alcanzar objetivos en los escalones, pero atacan a cualquier criatura (excepto goblins) que se mueva por la sala. Calmar a los lobos: Sabiduría (Trato animal) CD 15, o CD 10 si se les da comida. Fisura: apertura estrecha al muro este, chimenea natural de 30 pies hasta el área 8. Escalar: Fuerza (Atletismo) CD 10.",
+    "iluminacion": "oscuridad",
+    "terreno": "piedra",
+    "conexiones": [
+      {
+        "destino_id": "loc_cragmaw_puesto_goblin",
+        "tipo": "escalones",
+        "obstaculo_id": null,
+        "requiere": []
+      },
+      {
+        "destino_id": "loc_cragmaw_pasadizo_escarpado",
+        "tipo": "pasadizo",
+        "obstaculo_id": null,
+        "requiere": []
+      },
+      {
+        "destino_id": "loc_cragmaw_caverna_klarg",
+        "tipo": "chimenea",
+        "obstaculo_id": "obs_chimenea_area3",
+        "requiere": []
+      }
+    ],
+    "obstaculos": [
+      "obs_chimenea_area3"
+    ],
+    "enemigos_presentes": [
+      "enc_lobos_perrera"
+    ],
+    "npcs_presentes": [],
+    "objetos_presentes": [],
+    "triggers": [
+      "trg_frenesi_lobos"
+    ],
+    "eventos_temporizados": [],
+    "tablas_aleatorias": [],
+    "mapa_vtt": {
+      "mapa_id": "map_cragmaw_hideout",
+      "zona_id": "zone_cragmaw_03"
+    },
+    "musica_ambiente": "cave_wolves",
+    "tags": [
+      "perrera",
+      "lobos",
+      "chimenea"
+    ]
+  },
+  {
+    "id": "loc_cragmaw_pasadizo_escarpado",
+    "nombre": "Área 4: El Pasadizo Escarpado",
+    "tipo": "habitacion_dungeon",
+    "padre_id": "loc_cragmaw_hideout",
+    "descubierto": false,
+    "nivel_visibilidad": "oculto",
+    "descripcion_jugadores": "El pasadizo principal va empinándose cada vez más desde la entrada de la cueva, con la corriente de agua bajando y salpicando en su lado oeste. En las sombras, un pasadizo lateral avanza en dirección oeste a través del otro lado del riachuelo.",
+    "descripcion_dm": "A partir de aquí los PJs sin visión en la oscuridad necesitan luz. Los que miren hacia adelante avistan el puente del área 5. El pasadizo oeste está atascado por escombros y tiene zonas escarpadas (terreno difícil). La cornisa entre las dos escarpaduras es frágil: cualquier peso >100 libras la derrumba (salvación Destreza CD 10, 2d6 contundente, cae bocabajo).",
+    "iluminacion": "oscuridad",
+    "terreno": "piedra",
+    "conexiones": [
+      {
+        "destino_id": "loc_cragmaw_perrera",
+        "tipo": "pasadizo",
+        "obstaculo_id": null,
+        "requiere": []
+      },
+      {
+        "destino_id": "loc_cragmaw_paso_superior",
+        "tipo": "pasadizo_empinado",
+        "obstaculo_id": null,
+        "requiere": []
+      }
+    ],
+    "obstaculos": [
+      "obs_cornisa_fragil"
+    ],
+    "enemigos_presentes": [],
+    "npcs_presentes": [],
+    "objetos_presentes": [],
+    "triggers": [],
+    "eventos_temporizados": [],
+    "tablas_aleatorias": [],
+    "mapa_vtt": {
+      "mapa_id": "map_cragmaw_hideout",
+      "zona_id": "zone_cragmaw_04"
+    },
+    "musica_ambiente": "cave_ambient",
+    "tags": [
+      "pasadizo",
+      "cornisa",
+      "escombros"
+    ]
+  },
+  {
+    "id": "loc_cragmaw_paso_superior",
+    "nombre": "Área 5: El Paso Superior",
+    "tipo": "habitacion_dungeon",
+    "padre_id": "loc_cragmaw_hideout",
+    "descubierto": false,
+    "nivel_visibilidad": "oculto",
+    "descripcion_jugadores": "El pasadizo del riachuelo continúa hacia arriba tras otro grupo de escalones desnivelados. Un sonido de cascada sale de una caverna mayor en algún lugar frente a vosotros. Un desvencijado puente se extiende sobre el hueco del pasadizo, conectando dos túneles que se encuentran a 20 pies de altura sobre la corriente de agua.",
+    "descripcion_dm": "Puente de madera a 20 pies sobre el pasadizo, vigilado por un goblin perezoso. Si descubre a los PJs, da la señal de alarma a los goblins del área 7 para que liberen la riada, luego arroja jabalinas. Escalar los muros: Fuerza (Atletismo) CD 15. El puente tiene CA 5 y 10 PG; si se destruye, las criaturas encima caen (salvación Destreza CD 10, 2d6 contundente, bocabajo).",
+    "iluminacion": "oscuridad",
+    "terreno": "piedra",
+    "conexiones": [
+      {
+        "destino_id": "loc_cragmaw_pasadizo_escarpado",
+        "tipo": "escalones",
+        "obstaculo_id": null,
+        "requiere": []
+      },
+      {
+        "destino_id": "loc_cragmaw_madriguera",
+        "tipo": "pasadizo",
+        "obstaculo_id": null,
+        "requiere": []
+      },
+      {
+        "destino_id": "loc_cragmaw_cueva_piscinas",
+        "tipo": "pasadizo",
+        "obstaculo_id": null,
+        "requiere": []
+      }
+    ],
+    "obstaculos": [
+      "obs_puente_area5"
+    ],
+    "enemigos_presentes": [
+      "enc_goblin_puente"
+    ],
+    "npcs_presentes": [],
+    "objetos_presentes": [],
+    "triggers": [
+      "trg_alarma_riada"
+    ],
+    "eventos_temporizados": [
+      "evt_riada_area5"
+    ],
+    "tablas_aleatorias": [],
+    "mapa_vtt": {
+      "mapa_id": "map_cragmaw_hideout",
+      "zona_id": "zone_cragmaw_05"
+    },
+    "musica_ambiente": "cave_bridge_tension",
+    "tags": [
+      "puente",
+      "guardia",
+      "riada"
+    ]
+  },
+  {
+    "id": "loc_cragmaw_madriguera",
+    "nombre": "Área 6: La Madriguera Goblin",
+    "tipo": "habitacion_dungeon",
+    "padre_id": "loc_cragmaw_hideout",
+    "descubierto": false,
+    "nivel_visibilidad": "oculto",
+    "descripcion_jugadores": "Esta enorme cueva está dividida por la mitad por un risco de 10 pies de alto. Una escalinata de peldaños naturales lleva desde la zona inferior hasta la cornisa superior. El aire está brumoso con el humo de un fuego de cocina, e impregnado del hedor de pieles mal curtidas y goblins que llevan un tiempo sin lavarse.",
+    "descripcion_dm": "Seis goblins (uno líder con 12 PG, Yeemik). Sildar Hallwinter prisionero en la cornisa sur, atado, con 1 PG. Yeemik quiere expulsar a Klarg y convertirse en jefe. Si ve ventaja de los PJs, agarra a Sildar y grita '¡tregua, o este humano morirá!'. Si los PJs se niegan a parlamentar, Yeemik arroja a Sildar por el risco (1d6 contundente, queda a 0 PG).",
+    "iluminacion": "penumbra",
+    "terreno": "piedra",
+    "conexiones": [
+      {
+        "destino_id": "loc_cragmaw_paso_superior",
+        "tipo": "pasadizo",
+        "obstaculo_id": null,
+        "requiere": []
+      },
+      {
+        "destino_id": "loc_cragmaw_caverna_klarg",
+        "tipo": "pasadizo",
+        "obstaculo_id": null,
+        "requiere": []
+      }
+    ],
+    "obstaculos": [],
+    "enemigos_presentes": [
+      "enc_goblins_area6"
+    ],
+    "npcs_presentes": [
+      "npc_sildar",
+      "npc_yeemik"
+    ],
+    "objetos_presentes": [
+      "item_dientes_oro",
+      "item_monedas_yeemik"
+    ],
+    "triggers": [
+      "trg_ultimatum_yeemik"
+    ],
+    "eventos_temporizados": [],
+    "tablas_aleatorias": [],
+    "mapa_vtt": {
+      "mapa_id": "map_cragmaw_hideout",
+      "zona_id": "zone_cragmaw_06"
+    },
+    "musica_ambiente": "cave_goblin_den",
+    "tags": [
+      "madriguera",
+      "goblins",
+      "sildar",
+      "yeemik"
+    ]
+  },
+  {
+    "id": "loc_cragmaw_cueva_piscinas",
+    "nombre": "Área 7: La Cueva de las Piscinas Gemelas",
+    "tipo": "habitacion_dungeon",
+    "padre_id": "loc_cragmaw_hideout",
+    "descubierto": false,
+    "nivel_visibilidad": "oculto",
+    "descripcion_jugadores": "Esta caverna está medio ocupada por dos grandes piscinas de agua. Una estrecha cascada nutre una de las piscinas cayendo por el muro este, que discurre hasta el extremo oeste de la cámara para formar el chorro que fluye saliendo por la entrada de la cueva mucho más abajo. Muros bajos fabricados con cantos rodados hacen las veces de presa para mantener el agua dentro. Al sur se encuentra una amplia salida, mientras que dos pequeños pasadizos se encaminan hacia el oeste. El sonido de la cascada produce ecos que cruzan la caverna, haciendo que resulte muy difícil escuchar cualquier otro sonido.",
+    "descripcion_dm": "Tres goblins de guardia. Si el goblin del área 5 dio la alarma, están listos para el combate. El ruido de la cascada impide que se oiga la lucha desde el área 8. Tan pronto como empiece una pelea aquí, un goblin huye al área 8 a avisar a Klarg. Las presas de roca permiten liberar la riada. Si ya la han liberado, una piscina está vacía.",
+    "iluminacion": "oscuridad",
+    "terreno": "piedra",
+    "conexiones": [
+      {
+        "destino_id": "loc_cragmaw_paso_superior",
+        "tipo": "pasadizo",
+        "obstaculo_id": null,
+        "requiere": []
+      },
+      {
+        "destino_id": "loc_cragmaw_caverna_klarg",
+        "tipo": "pasadizo",
+        "obstaculo_id": null,
+        "requiere": []
+      }
+    ],
+    "obstaculos": [],
+    "enemigos_presentes": [
+      "enc_goblins_area7"
+    ],
+    "npcs_presentes": [],
+    "objetos_presentes": [],
+    "triggers": [
+      "trg_liberar_riada",
+      "trg_aviso_a_klarg"
+    ],
+    "eventos_temporizados": [
+      "evt_riada_area5"
+    ],
+    "tablas_aleatorias": [],
+    "mapa_vtt": {
+      "mapa_id": "map_cragmaw_hideout",
+      "zona_id": "zone_cragmaw_07"
+    },
+    "musica_ambiente": "cave_waterfall",
+    "tags": [
+      "piscinas",
+      "presas",
+      "riada",
+      "goblins"
+    ]
+  },
+  {
+    "id": "loc_cragmaw_caverna_klarg",
+    "nombre": "Área 8: La Caverna de Klarg",
+    "tipo": "habitacion_dungeon",
+    "padre_id": "loc_cragmaw_hideout",
+    "descubierto": false,
+    "nivel_visibilidad": "oculto",
+    "descripcion_jugadores": "Sacos y cajones de provisiones robadas se encuentran apilados en el extremo sur de esta gran cueva. Hacia el oeste, el suelo se solapa junto a una apertura estrecha que desciende hacia la oscuridad. Una apertura de mayor tamaño lleva en dirección norte bajando por una serie de escalones de piedra creados de forma natural, el rugido de una cascada produce un eco que llega desde más allá. En mitad de la caverna, todavía brillan los rescoldos de una enorme hoguera.",
+    "descripcion_dm": "Klarg el osgo, su lobo Destripador y dos goblins. Klarg tiene delirios de grandeza, habla de sí mismo en tercera persona. Si ha sido avisado, se esconde tras las estalagmitas con su lobo y embosca. Si no, los PJs pueden sorprenderle (mejor vía: escalar la chimenea desde el área 3). Si matan al lobo, Klarg intenta huir por la chimenea al área 3 y escapar del complejo. El pozo de fuego causa 1 daño por fuego a quien entre, o 1d6 si cae bocabajo.",
+    "iluminacion": "penumbra",
+    "terreno": "piedra",
+    "conexiones": [
+      {
+        "destino_id": "loc_cragmaw_madriguera",
+        "tipo": "pasadizo",
+        "obstaculo_id": null,
+        "requiere": []
+      },
+      {
+        "destino_id": "loc_cragmaw_cueva_piscinas",
+        "tipo": "pasadizo",
+        "obstaculo_id": null,
+        "requiere": []
+      },
+      {
+        "destino_id": "loc_cragmaw_perrera",
+        "tipo": "chimenea",
+        "obstaculo_id": "obs_chimenea_area3",
+        "requiere": []
+      }
+    ],
+    "obstaculos": [
+      "obs_chimenea_area3"
+    ],
+    "enemigos_presentes": [
+      "enc_klarg_y_lobo"
+    ],
+    "npcs_presentes": [
+      "npc_klarg"
+    ],
+    "objetos_presentes": [
+      "item_cofre_klarg",
+      "item_estatuilla_jade",
+      "item_pocion_curacion",
+      "item_suministros_robados"
+    ],
+    "triggers": [
+      "trg_huida_klarg"
+    ],
+    "eventos_temporizados": [],
+    "tablas_aleatorias": [],
+    "mapa_vtt": {
+      "mapa_id": "map_cragmaw_hideout",
+      "zona_id": "zone_cragmaw_08"
+    },
+    "musica_ambiente": "cave_boss_room",
+    "tags": [
+      "klarg",
+      "tesoro",
+      "pozo_fuego",
+      "chimenea"
+    ]
+  },
+  {
+    "id": "loc_phandalin",
+    "nombre": "Phandalin",
+    "tipo": "pueblo",
+    "padre_id": "loc_sendero_triboar",
+    "descubierto": false,
+    "nivel_visibilidad": "oculto",
+    "descripcion_jugadores": "La ciudad fronteriza de Phandalin está construida sobre las ruinas de un asentamiento mucho más antiguo. Un bullicioso asentamiento fronterizo ha crecido en el lugar de la antigua ciudad, y acoge ahora a granjeros, leñadores, comerciantes de pieles y buscadores.",
+    "descripcion_dm": "PLACEHOLDER. Phandalin se detalla en la Parte 2, pendiente de extracción. Contiene ~40-50 edificios de troncos, la Posada Colina de Piedra, Suministros Barthen, la Ámbula Escudo de León, la Lonja Minera, el Santuario de la Suerte, la Granja Hoja de Aliso, el Salón del Burgomaestre y la Mansión Tresendar (base de la Marca Roja).",
+    "iluminacion": "luz_brillante",
+    "terreno": "tierra",
+    "conexiones": [
+      {
+        "destino_id": "loc_sendero_triboar",
+        "tipo": "sendero",
+        "obstaculo_id": null,
+        "requiere": []
+      }
+    ],
+    "obstaculos": [],
+    "enemigos_presentes": [],
+    "npcs_presentes": [],
+    "objetos_presentes": [],
+    "triggers": [],
+    "eventos_temporizados": [],
+    "tablas_aleatorias": [],
+    "mapa_vtt": {
+      "mapa_id": "map_region_phandalin",
+      "zona_id": "zone_region_phandalin"
+    },
+    "musica_ambiente": "town_ambient",
+    "tags": [
+      "placeholder",
+      "pueblo",
+      "pendiente_parte_2"
+    ]
+  }
+]

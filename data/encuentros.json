@@ -1,0 +1,303 @@
+[
+  {
+    "id": "enc_emboscada_goblin",
+    "nombre": "Emboscada goblin en el Sendero de Triboar",
+    "lugar_id": "loc_sendero_triboar_emboscada",
+    "tipo": "combate",
+    "descubierto": false,
+    "estado": "no_iniciado",
+    "disparador": "al acercarse a los caballos muertos en el Sendero de Triboar",
+    "condiciones_inicio": {
+      "sorpresa": "Los goblins hacen una prueba de Destreza (Sigilo) +6 contra la Percepción Pasiva de los PJs. Los que fallen quedan sorprendidos.",
+      "tirada": null,
+      "requiere": []
+    },
+    "monstruos": [
+      {
+        "monstruo_id": "mon_goblin",
+        "cantidad": 4,
+        "nombre_instancia": "Goblins emboscadores",
+        "pg_actuales": null
+      }
+    ],
+    "npcs_participantes": [],
+    "botin": [
+      {
+        "tipo": "oro",
+        "item_id": null,
+        "cantidad": "1d10",
+        "moneda": "pc"
+      }
+    ],
+    "xp_total": 200,
+    "xp_por_monstruo": {
+      "mon_goblin": 50
+    },
+    "notas_dm_tacticas": "Dos goblins atacan cuerpo a cuerpo, dos a distancia (30 pies). Cuando 3 goblins son derrotados, el último huye hacia el sendero goblin. Si los PJs son derrotados, los goblins les dejan inconscientes, saquean la carreta y vuelven a la guarida.",
+    "notas_dm_narrativas": "Primer encuentro de combate de la campaña. Sirve para enseñar las reglas de sorpresa, iniciativa y cobertura. El sendero se cierra en torno a la emboscada, con un terraplén y matorrales a cada lado.",
+    "tags": [
+      "emboscada",
+      "primero",
+      "sendero"
+    ]
+  },
+  {
+    "id": "enc_goblins_area2",
+    "nombre": "Guardia goblin en el puesto del área 2",
+    "lugar_id": "loc_cragmaw_puesto_goblin",
+    "tipo": "combate",
+    "descubierto": false,
+    "estado": "no_iniciado",
+    "disparador": "al cruzar el riachuelo hacia el lado este o al hacer ruido en el área 1",
+    "condiciones_inicio": {
+      "sorpresa": "Si los PJs se mueven con cuidado, hacen Destreza (Sigilo) contra la Percepción Pasiva de los goblins. Si los goblins no descubren a los PJs en el área 1, los avistan al oír el chapoteo: nadie sorprendido.",
+      "tirada": null,
+      "requiere": []
+    },
+    "monstruos": [
+      {
+        "monstruo_id": "mon_goblin",
+        "cantidad": 2,
+        "nombre_instancia": "Guardias goblin",
+        "pg_actuales": null
+      }
+    ],
+    "npcs_participantes": [],
+    "botin": [],
+    "xp_total": 100,
+    "xp_por_monstruo": {
+      "mon_goblin": 50
+    },
+    "notas_dm_tacticas": "Los goblins abren fuego con arcos a través de los arbustos. Los arbustos son terreno difícil y dan media cobertura. Los PJs con cobertura de tres cuartos si los goblins disparan desde detrás.",
+    "notas_dm_narrativas": "Los goblins están aburridos e inactivos. La zona es un claro entre arbustos de brezo.",
+    "tags": [
+      "guardia",
+      "goblins",
+      "arbustos"
+    ]
+  },
+  {
+    "id": "enc_lobos_perrera",
+    "nombre": "Los lobos de la perrera",
+    "lugar_id": "loc_cragmaw_perrera",
+    "tipo": "combate",
+    "descubierto": false,
+    "estado": "no_iniciado",
+    "disparador": "al entrar en la perrera o al acercarse a los lobos",
+    "condiciones_inicio": {
+      "sorpresa": null,
+      "tirada": "Sabiduría (Trato animal) CD 15 para calmarlos. CD 10 si se les da comida.",
+      "requiere": []
+    },
+    "monstruos": [
+      {
+        "monstruo_id": "mon_lobo",
+        "cantidad": 3,
+        "nombre_instancia": "Lobos sarnosos",
+        "pg_actuales": null
+      }
+    ],
+    "npcs_participantes": [],
+    "botin": [],
+    "xp_total": 150,
+    "xp_por_monstruo": {
+      "mon_lobo": 50
+    },
+    "notas_dm_tacticas": "No pueden alcanzar objetivos en los escalones, pero atacan a cualquier criatura (excepto goblins) que se mueva por la sala. Si son provocados desde lejos, entran en frenesí: cada turno intentan Fuerza CD 15 para arrancar la vara de hierro. Con el primer éxito, la CD baja a 10. Con el segundo, se liberan.",
+    "notas_dm_narrativas": "Tres lobos sarnosos encadenados a varas de hierro. Hedor a animales. Los goblins ignoran sus peleas.",
+    "tags": [
+      "lobos",
+      "perrera",
+      "frenesi"
+    ]
+  },
+  {
+    "id": "enc_goblin_puente",
+    "nombre": "El goblin del puente",
+    "lugar_id": "loc_cragmaw_paso_superior",
+    "tipo": "combate",
+    "descubierto": false,
+    "estado": "no_iniciado",
+    "disparador": "al acercarse al puente del área 5 con luz o sin sigilo",
+    "condiciones_inicio": {
+      "sorpresa": "Los PJs pueden intentar Destreza (Sigilo) contra la Percepción Pasiva del goblin para arrastrarse por debajo sin ser descubiertos.",
+      "tirada": null,
+      "requiere": []
+    },
+    "monstruos": [
+      {
+        "monstruo_id": "mon_goblin",
+        "cantidad": 1,
+        "nombre_instancia": "Goblin vigía del puente",
+        "pg_actuales": null
+      }
+    ],
+    "npcs_participantes": [],
+    "botin": [],
+    "xp_total": 50,
+    "xp_por_monstruo": {
+      "mon_goblin": 50
+    },
+    "notas_dm_tacticas": "Si descubre a los PJs, da la señal de alarma a los goblins del área 7 para que liberen la riada, luego arroja jabalinas. No ataca cuerpo a cuerpo si puede evitarlo.",
+    "notas_dm_narrativas": "Goblin perezoso y distraído. El puente se extiende sobre el hueco del pasadizo a 20 pies de altura.",
+    "tags": [
+      "puente",
+      "guardia",
+      "riada"
+    ]
+  },
+  {
+    "id": "enc_goblins_area6",
+    "nombre": "La madriguera goblin",
+    "lugar_id": "loc_cragmaw_madriguera",
+    "tipo": "mixto",
+    "descubierto": false,
+    "estado": "no_iniciado",
+    "disparador": "al entrar en la madriguera",
+    "condiciones_inicio": {
+      "sorpresa": null,
+      "tirada": null,
+      "requiere": []
+    },
+    "monstruos": [
+      {
+        "monstruo_id": "mon_goblin_lider",
+        "cantidad": 1,
+        "nombre_instancia": "Yeemik",
+        "pg_actuales": 12
+      },
+      {
+        "monstruo_id": "mon_goblin",
+        "cantidad": 5,
+        "nombre_instancia": "Goblins de la madriguera",
+        "pg_actuales": null
+      }
+    ],
+    "npcs_participantes": [
+      "npc_sildar",
+      "npc_yeemik"
+    ],
+    "botin": [
+      {
+        "tipo": "objeto",
+        "item_id": "item_dientes_oro",
+        "cantidad": 3,
+        "moneda": null
+      },
+      {
+        "tipo": "oro",
+        "item_id": "item_monedas_yeemik",
+        "cantidad": 15,
+        "moneda": "pp"
+      }
+    ],
+    "xp_total": 350,
+    "xp_por_monstruo": {
+      "mon_goblin_lider": 100,
+      "mon_goblin": 50
+    },
+    "notas_dm_tacticas": "Cinco goblins normales atienden el fuego en la parte baja, Yeemik descansa en la parte superior. Si Yeemik ve ventaja de los PJs, agarra a Sildar y grita '¡tregua, o este humano morirá!'. Si los PJs parlamentan, propone matar a Klarg a cambio de Sildar. Si se niegan, arroja a Sildar por el risco (1d6 contundente, queda a 0 PG). Los PJs pueden estabilizarle si actúan rápido.",
+    "notas_dm_narrativas": "Cueva dividida por un risco de 10 pies. Sildar está atado en la cornisa sur, débil y torturado. Yeemik es ambicioso y traicionero.",
+    "tags": [
+      "madriguera",
+      "yeemik",
+      "sildar",
+      "rehen",
+      "negociacion"
+    ]
+  },
+  {
+    "id": "enc_goblins_area7",
+    "nombre": "Los goblins de las piscinas gemelas",
+    "lugar_id": "loc_cragmaw_cueva_piscinas",
+    "tipo": "combate",
+    "descubierto": false,
+    "estado": "no_iniciado",
+    "disparador": "al entrar en el área 7 o al ser avisados por el goblin del puente",
+    "condiciones_inicio": {
+      "sorpresa": "Si el goblin del área 5 dio la alarma, están listos para el combate: nadie sorprendido.",
+      "tirada": null,
+      "requiere": []
+    },
+    "monstruos": [
+      {
+        "monstruo_id": "mon_goblin",
+        "cantidad": 3,
+        "nombre_instancia": "Guardias de las piscinas",
+        "pg_actuales": null
+      }
+    ],
+    "npcs_participantes": [],
+    "botin": [],
+    "xp_total": 150,
+    "xp_por_monstruo": {
+      "mon_goblin": 50
+    },
+    "notas_dm_tacticas": "El ruido de la cascada impide que se oiga la lucha desde el área 8. Tan pronto como empiece una pelea aquí, un goblin huye al área 8 a avisar a Klarg. Pueden liberar la riada golpeando los soportes de las presas.",
+    "notas_dm_narrativas": "Caverna medio ocupada por dos grandes piscinas de agua. El sonido de la cascada produce ecos. Las presas de roca controlan la corriente.",
+    "tags": [
+      "piscinas",
+      "goblins",
+      "riada"
+    ]
+  },
+  {
+    "id": "enc_klarg_y_lobo",
+    "nombre": "Klarg y su lobo Destripador",
+    "lugar_id": "loc_cragmaw_caverna_klarg",
+    "tipo": "combate",
+    "descubierto": false,
+    "estado": "no_iniciado",
+    "disparador": "al entrar en la caverna de Klarg",
+    "condiciones_inicio": {
+      "sorpresa": "Si Klarg ha sido avisado, se esconde tras las estalagmitas con su lobo y embosca. Si no, los PJs pueden sorprenderle (mejor vía: escalar la chimenea desde el área 3).",
+      "tirada": null,
+      "requiere": []
+    },
+    "monstruos": [
+      {
+        "monstruo_id": "mon_osgo",
+        "cantidad": 1,
+        "nombre_instancia": "Klarg",
+        "pg_actuales": 27
+      },
+      {
+        "monstruo_id": "mon_lobo",
+        "cantidad": 1,
+        "nombre_instancia": "Destripador",
+        "pg_actuales": 11
+      },
+      {
+        "monstruo_id": "mon_goblin",
+        "cantidad": 2,
+        "nombre_instancia": "Goblins de Klarg",
+        "pg_actuales": null
+      }
+    ],
+    "npcs_participantes": [
+      "npc_klarg"
+    ],
+    "botin": [
+      {
+        "tipo": "objeto",
+        "item_id": "item_cofre_klarg",
+        "cantidad": 1,
+        "moneda": null
+      }
+    ],
+    "xp_total": 400,
+    "xp_por_monstruo": {
+      "mon_osgo": 200,
+      "mon_lobo": 50,
+      "mon_goblin": 50
+    },
+    "notas_dm_tacticas": "Si matan al lobo, Klarg intenta huir trepando por la chimenea al área 3 y escapar del complejo. El pozo de fuego causa 1 daño por fuego a quien entre, o 1d6 si cae bocabajo.",
+    "notas_dm_narrativas": "Klarg tiene delirios de grandeza, habla de sí mismo en tercera persona. Sus goblins le resienten. El pozo de fuego central aún humea.",
+    "tags": [
+      "klarg",
+      "jefe",
+      "tesoro",
+      "pozo_fuego"
+    ]
+  }
+]

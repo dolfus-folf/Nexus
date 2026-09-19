@@ -1,0 +1,165 @@
+[
+  {
+    "id": "fac_bocapenasco",
+    "nombre": "Tribu Bocapeñasco",
+    "tipo": "tribu_goblinoide",
+    "descripcion_dm": "Tribu mixta de goblins, osgos y hobgoblins que saquea el Sendero de Triboar y el Gran Camino. Se llama así porque sus miembros afilan sus dientes. Liderada por el Rey Grol desde el Castillo Bocapeñasco.",
+    "descubierta": false,
+    "lider_id": "npc_rey_grol",
+    "base_id": "loc_castillo_bocapenasco",
+    "objetivos": [
+      "Saquear caravanas pobremente defendidas",
+      "Detener a Gundren Buscarrocas por orden de la Araña Negra",
+      "Mantener el control de la Guarida Bocapeñasco"
+    ],
+    "miembros_conocidos": [
+      {
+        "npc_id": "npc_klarg",
+        "rol": "líder local de la guarida",
+        "lugar_id": "loc_cragmaw_caverna_klarg"
+      },
+      {
+        "npc_id": "npc_yeemik",
+        "rol": "segundo al mando",
+        "lugar_id": "loc_cragmaw_madriguera"
+      },
+      {
+        "npc_id": "npc_sildar",
+        "rol": "prisionero en la guarida",
+        "lugar_id": "loc_cragmaw_madriguera"
+      }
+    ],
+    "relaciones": [
+      {
+        "faccion_id": "fac_arana_negra",
+        "tipo": "subordinada",
+        "notas": "Los Bocapeñasco trabajan para la Araña Negra a través del Rey Grol."
+      }
+    ],
+    "reputacion_inicial_party": 0,
+    "reputacion_rango": {
+      "min": -10,
+      "max": 10
+    },
+    "recursos": [
+      "goblins",
+      "lobos",
+      "osgos",
+      "hobgoblins",
+      "trampas"
+    ],
+    "idiomas": [
+      "común",
+      "goblin"
+    ],
+    "tags": [
+      "hostil",
+      "goblinoide",
+      "bosque_neverwinter"
+    ]
+  },
+  {
+    "id": "fac_arana_negra",
+    "nombre": "La Araña Negra",
+    "tipo": "red_de_espías",
+    "descripcion_dm": "Organización misteriosa liderada por el drow Nezznar. Controla a los Bocapeñasco y a la Marca Roja para asegurar la Cueva del Oleaje. Busca la Forja de los Conjuros.",
+    "descubierta": false,
+    "lider_id": "npc_nezznar",
+    "base_id": "loc_cueva_oleaje",
+    "objetivos": [
+      "Encontrar y controlar la Forja de los Conjuros",
+      "Eliminar a los personajes",
+      "Mantener en secreto la ubicación de la Cueva del Oleaje"
+    ],
+    "miembros_conocidos": [
+      {
+        "npc_id": "npc_nezznar",
+        "rol": "líder",
+        "lugar_id": null
+      },
+      {
+        "npc_id": "npc_vyerith",
+        "rol": "mensajera doppelganger",
+        "lugar_id": null
+      }
+    ],
+    "relaciones": [
+      {
+        "faccion_id": "fac_bocapenasco",
+        "tipo": "controla",
+        "notas": "A través del Rey Grol."
+      },
+      {
+        "faccion_id": "fac_marca_roja",
+        "tipo": "controla",
+        "notas": "A través de Iarno Albrek."
+      }
+    ],
+    "reputacion_inicial_party": 0,
+    "reputacion_rango": {
+      "min": -10,
+      "max": 10
+    },
+    "recursos": [
+      "osgos",
+      "doppelgangers",
+      "arañas gigantes",
+      "magia"
+    ],
+    "idiomas": [
+      "común",
+      "élfico",
+      "infracomún"
+    ],
+    "tags": [
+      "villano_principal",
+      "drow",
+      "secreta"
+    ]
+  },
+  {
+    "id": "fac_alianza_senores",
+    "nombre": "La Alianza de los Señores",
+    "tipo": "organizacion_politica",
+    "descripcion_dm": "Grupo de poderes políticos aliados del Norte, unidos por la prosperidad y la seguridad mutuas. Sus miembros aseguran la seguridad de ciudades eliminando amenazas proactivamente.",
+    "descubierta": false,
+    "lider_id": null,
+    "base_id": null,
+    "objetivos": [
+      "Proteger las ciudades del Norte",
+      "Investigar la desaparición de Iarno Albrek",
+      "Reabrir la mina de la Cueva del Oleaje"
+    ],
+    "miembros_conocidos": [
+      {
+        "npc_id": "npc_sildar",
+        "rol": "agente",
+        "lugar_id": "loc_cragmaw_madriguera"
+      },
+      {
+        "npc_id": "npc_iarno",
+        "rol": "agente desaparecido",
+        "lugar_id": null
+      }
+    ],
+    "relaciones": [],
+    "reputacion_inicial_party": 0,
+    "reputacion_rango": {
+      "min": -10,
+      "max": 10
+    },
+    "recursos": [
+      "agentes",
+      "influencia política",
+      "información"
+    ],
+    "idiomas": [
+      "común"
+    ],
+    "tags": [
+      "aliada",
+      "política",
+      "norte"
+    ]
+  }
+]

@@ -1,0 +1,125 @@
+[
+  {
+    "id": "item_pocion_curacion",
+    "nombre": "Poción de curación",
+    "tipo": "pocion",
+    "rareza": "comun",
+    "descripcion_jugadores": "Un líquido rojo brillante que huele a hierro y cereza.",
+    "descripcion_dm": "Poción estándar de curación.",
+    "efecto_mecanico": "Recuperas 2d4+2 puntos de golpe al beberla.",
+    "requiere_sintonizacion": false,
+    "peso": 0.5,
+    "valor_po": 50,
+    "fuente": "Apéndice A",
+    "tags": [
+      "consumible",
+      "curacion"
+    ]
+  },
+  {
+    "id": "item_dientes_oro",
+    "nombre": "Dientes de oro de Yeemik",
+    "tipo": "tesoro",
+    "rareza": "comun",
+    "descripcion_jugadores": "Tres dientes de oro, arrancados de alguna desafortunada víctima.",
+    "descripcion_dm": "Botín de Yeemik. Valorados en 1 po cada uno.",
+    "efecto_mecanico": null,
+    "requiere_sintonizacion": false,
+    "peso": 0.1,
+    "valor_po": 3,
+    "fuente": "Área 6",
+    "tags": [
+      "tesoro",
+      "botin"
+    ]
+  },
+  {
+    "id": "item_monedas_yeemik",
+    "nombre": "Bolsa de monedas de Yeemik",
+    "tipo": "tesoro",
+    "rareza": "comun",
+    "descripcion_jugadores": "Una bolsita de cuero con 15 piezas de platino.",
+    "descripcion_dm": "Botín de Yeemik.",
+    "efecto_mecanico": null,
+    "requiere_sintonizacion": false,
+    "peso": 0.3,
+    "valor_po": 150,
+    "fuente": "Área 6",
+    "tags": [
+      "tesoro",
+      "monedas"
+    ]
+  },
+  {
+    "id": "item_cofre_klarg",
+    "nombre": "Cofre de Klarg",
+    "tipo": "tesoro",
+    "rareza": "comun",
+    "descripcion_jugadores": "Un cofre de tesoro con la cerradura abierta, escondido entre los suministros robados.",
+    "descripcion_dm": "Contiene 600 pc, 110 pp, 2 pociones curativas y una estatuilla de jade (40 po).",
+    "efecto_mecanico": null,
+    "requiere_sintonizacion": false,
+    "peso": 10,
+    "valor_po": 200,
+    "fuente": "Área 8",
+    "tags": [
+      "tesoro",
+      "cofre",
+      "klarg"
+    ]
+  },
+  {
+    "id": "item_estatuilla_jade",
+    "nombre": "Estatuilla de jade (rana)",
+    "tipo": "tesoro",
+    "rareza": "comun",
+    "descripcion_jugadores": "Una estatuilla de jade que representa a una rana con diminutos orbes dorados en lugar de ojos.",
+    "descripcion_dm": "Lo suficientemente pequeña como para caber en un bolsillo o bolsa pequeña. Valorada en 40 po.",
+    "efecto_mecanico": null,
+    "requiere_sintonizacion": false,
+    "peso": 0.2,
+    "valor_po": 40,
+    "fuente": "Área 8",
+    "tags": [
+      "tesoro",
+      "jade",
+      "rana"
+    ]
+  },
+  {
+    "id": "item_suministros_robados",
+    "nombre": "Suministros robados de la Ámbula Escudo de León",
+    "tipo": "equipo",
+    "rareza": "comun",
+    "descripcion_jugadores": "La montaña de bienes robados es enorme. La mayoría de los sacos y cajas están sellados con la imagen de un león azul.",
+    "descripcion_dm": "Provisiones robadas por los Bocapeñasco. Si se devuelven a la Ámbula Escudo de León en Phandalin, los PJs ganan 50 po y la amistad de Linene. Necesitan al menos un carro para transportarlos.",
+    "efecto_mecanico": null,
+    "requiere_sintonizacion": false,
+    "peso": null,
+    "valor_po": 100,
+    "fuente": "Área 8",
+    "tags": [
+      "equipo",
+      "suministros",
+      "recompensa"
+    ]
+  },
+  {
+    "id": "item_carro_suministros",
+    "nombre": "Carromato de suministros de Gundren",
+    "tipo": "equipo",
+    "rareza": "comun",
+    "descripcion_jugadores": "El carro está completamente cargado de toda clase de suministros para minería y comida. Dos bueyes tiran de la carreta.",
+    "descripcion_dm": "Carga inicial del gancho. Incluye una docena de sacos de harina, varias barricas de cerdo curado, dos toneles de cerveza, palas, picos, palancas y cinco linternas con aceite. Valor total: 100 po. Si los PJs entregan el carro a Elmar Barthen, cada uno recibe 10 po.",
+    "efecto_mecanico": null,
+    "requiere_sintonizacion": false,
+    "peso": null,
+    "valor_po": 100,
+    "fuente": "Parte 1",
+    "tags": [
+      "equipo",
+      "carro",
+      "gancho"
+    ]
+  }
+]

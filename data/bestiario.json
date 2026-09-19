@@ -1,0 +1,1724 @@
+[
+  {
+    "id": "mon_goblin",
+    "nombre": "Goblin",
+    "tipo": "humanoide",
+    "etiquetas": [
+      "goblinoide"
+    ],
+    "tamano": "pequeño",
+    "alineamiento": "neutral maligno",
+    "sistema_origen": "2014",
+    "conversion_2024": null,
+    "aparece_en": [
+      "parte_1",
+      "apendice_b"
+    ],
+    "clase_armadura": 15,
+    "clase_armadura_nota": "armadura de cuero, escudo",
+    "puntos_golpe": 7,
+    "puntos_golpe_dados": "2d6",
+    "velocidad": {
+      "caminar": 30,
+      "volar": null,
+      "nadar": null,
+      "escalar": null
+    },
+    "caracteristicas": {
+      "fue": 8,
+      "des": 14,
+      "con": 10,
+      "int": 10,
+      "sab": 8,
+      "car": 8
+    },
+    "modificadores": {
+      "fue": -1,
+      "des": 2,
+      "con": 0,
+      "int": 0,
+      "sab": -1,
+      "car": -1
+    },
+    "tiradas_salvacion": {},
+    "habilidades": {
+      "sigilo": 6
+    },
+    "resistencias_dano": [],
+    "inmunidades_dano": [],
+    "vulnerabilidades_dano": [],
+    "inmunidades_condicion": [],
+    "sentidos": {
+      "vision_oscuridad": 60,
+      "vision_ciega": null,
+      "vision_verdadera": null,
+      "percepcion_pasiva": 9
+    },
+    "idiomas": [
+      "común",
+      "goblin"
+    ],
+    "desafio": 0.25,
+    "xp": 50,
+    "rasgos": [
+      {
+        "nombre": "Escurridizo",
+        "descripcion": "El goblin puede destrabarse o esconderse como una acción gratuita en cada uno de sus turnos."
+      }
+    ],
+    "acciones": [
+      {
+        "nombre": "Cimitarra",
+        "tipo": "cuerpo_a_cuerpo",
+        "bonus": 4,
+        "alcance": "5 pies",
+        "dano": "5 (1d6+2) cortante",
+        "notas": null
+      },
+      {
+        "nombre": "Arco corto",
+        "tipo": "distancia",
+        "bonus": 4,
+        "alcance": "80/320 pies",
+        "dano": "5 (1d6+2) perforante",
+        "notas": null
+      }
+    ],
+    "reacciones": [],
+    "acciones_limitadas": [],
+    "descripcion": "Los goblins tienen un negro corazón, son abrumadores en número y anhelan el poder, cosa que abusan si lo obtienen."
+  },
+  {
+    "id": "mon_goblin_lider",
+    "nombre": "Goblin líder (Yeemik)",
+    "tipo": "humanoide",
+    "etiquetas": [
+      "goblinoide"
+    ],
+    "tamano": "pequeño",
+    "alineamiento": "neutral maligno",
+    "sistema_origen": "2014",
+    "conversion_2024": null,
+    "aparece_en": [
+      "parte_1"
+    ],
+    "clase_armadura": 15,
+    "clase_armadura_nota": "armadura de cuero, escudo",
+    "puntos_golpe": 12,
+    "puntos_golpe_dados": "3d6+3",
+    "velocidad": {
+      "caminar": 30,
+      "volar": null,
+      "nadar": null,
+      "escalar": null
+    },
+    "caracteristicas": {
+      "fue": 8,
+      "des": 14,
+      "con": 12,
+      "int": 10,
+      "sab": 8,
+      "car": 8
+    },
+    "modificadores": {
+      "fue": -1,
+      "des": 2,
+      "con": 1,
+      "int": 0,
+      "sab": -1,
+      "car": -1
+    },
+    "tiradas_salvacion": {},
+    "habilidades": {
+      "sigilo": 6
+    },
+    "resistencias_dano": [],
+    "inmunidades_dano": [],
+    "vulnerabilidades_dano": [],
+    "inmunidades_condicion": [],
+    "sentidos": {
+      "vision_oscuridad": 60,
+      "vision_ciega": null,
+      "vision_verdadera": null,
+      "percepcion_pasiva": 9
+    },
+    "idiomas": [
+      "común",
+      "goblin"
+    ],
+    "desafio": 0.5,
+    "xp": 100,
+    "rasgos": [
+      {
+        "nombre": "Escurridizo",
+        "descripcion": "El goblin puede destrabarse o esconderse como una acción gratuita en cada uno de sus turnos."
+      }
+    ],
+    "acciones": [
+      {
+        "nombre": "Cimitarra",
+        "tipo": "cuerpo_a_cuerpo",
+        "bonus": 4,
+        "alcance": "5 pies",
+        "dano": "5 (1d6+2) cortante",
+        "notas": null
+      },
+      {
+        "nombre": "Arco corto",
+        "tipo": "distancia",
+        "bonus": 4,
+        "alcance": "80/320 pies",
+        "dano": "5 (1d6+2) perforante",
+        "notas": null
+      }
+    ],
+    "reacciones": [],
+    "acciones_limitadas": [],
+    "descripcion": "Goblin líder con más aguante que un goblin común. En la Guarida Bocapeñasco, este statblock representa a Yeemik."
+  },
+  {
+    "id": "mon_lobo",
+    "nombre": "Lobo",
+    "tipo": "bestia",
+    "etiquetas": [],
+    "tamano": "mediano",
+    "alineamiento": "sin alineamiento",
+    "sistema_origen": "2014",
+    "conversion_2024": null,
+    "aparece_en": [
+      "parte_1",
+      "apendice_b"
+    ],
+    "clase_armadura": 13,
+    "clase_armadura_nota": "armadura natural",
+    "puntos_golpe": 11,
+    "puntos_golpe_dados": "2d8+2",
+    "velocidad": {
+      "caminar": 40,
+      "volar": null,
+      "nadar": null,
+      "escalar": null
+    },
+    "caracteristicas": {
+      "fue": 12,
+      "des": 15,
+      "con": 12,
+      "int": 3,
+      "sab": 12,
+      "car": 6
+    },
+    "modificadores": {
+      "fue": 1,
+      "des": 2,
+      "con": 1,
+      "int": -4,
+      "sab": 1,
+      "car": -2
+    },
+    "tiradas_salvacion": {},
+    "habilidades": {
+      "percepcion": 3,
+      "sigilo": 4
+    },
+    "resistencias_dano": [],
+    "inmunidades_dano": [],
+    "vulnerabilidades_dano": [],
+    "inmunidades_condicion": [],
+    "sentidos": {
+      "vision_oscuridad": null,
+      "vision_ciega": null,
+      "vision_verdadera": null,
+      "percepcion_pasiva": 13
+    },
+    "idiomas": [],
+    "desafio": 0.25,
+    "xp": 50,
+    "rasgos": [
+      {
+        "nombre": "Oído y olfato agudo",
+        "descripcion": "El lobo tiene ventaja en las pruebas de Sabiduría (Percepción) que tienen que ver con el olfato o el sonido."
+      },
+      {
+        "nombre": "Táctica de manada",
+        "descripcion": "El lobo tiene ventaja en las tiradas de ataque si hay al menos un aliado a 5 pies de él y este no está incapacitado."
+      }
+    ],
+    "acciones": [
+      {
+        "nombre": "Mordisco",
+        "tipo": "cuerpo_a_cuerpo",
+        "bonus": 4,
+        "alcance": "5 pies",
+        "dano": "7 (2d4+2) perforante",
+        "notas": "Si el objetivo es una criatura, debe superar una tirada de salvación de Fuerza CD 11 o queda tumbado."
+      }
+    ],
+    "reacciones": [],
+    "acciones_limitadas": [],
+    "descripcion": "Los lobos suelen encontrarse en regiones subárticas y templadas del mundo, corriendo en manada a través de colinas y bosques."
+  },
+  {
+    "id": "mon_osgo",
+    "nombre": "Osgo",
+    "tipo": "humanoide",
+    "etiquetas": [
+      "goblinoide"
+    ],
+    "tamano": "mediano",
+    "alineamiento": "caótico maligno",
+    "sistema_origen": "2014",
+    "conversion_2024": null,
+    "aparece_en": [
+      "parte_1",
+      "parte_2",
+      "parte_4",
+      "apendice_b"
+    ],
+    "clase_armadura": 16,
+    "clase_armadura_nota": "armadura de pieles, escudo",
+    "puntos_golpe": 27,
+    "puntos_golpe_dados": "5d8+5",
+    "velocidad": {
+      "caminar": 30,
+      "volar": null,
+      "nadar": null,
+      "escalar": null
+    },
+    "caracteristicas": {
+      "fue": 15,
+      "des": 14,
+      "con": 13,
+      "int": 8,
+      "sab": 11,
+      "car": 9
+    },
+    "modificadores": {
+      "fue": 2,
+      "des": 2,
+      "con": 1,
+      "int": -1,
+      "sab": 0,
+      "car": -1
+    },
+    "tiradas_salvacion": {},
+    "habilidades": {
+      "sigilo": 6,
+      "supervivencia": 2
+    },
+    "resistencias_dano": [],
+    "inmunidades_dano": [],
+    "vulnerabilidades_dano": [],
+    "inmunidades_condicion": [],
+    "sentidos": {
+      "vision_oscuridad": 60,
+      "vision_ciega": null,
+      "vision_verdadera": null,
+      "percepcion_pasiva": 10
+    },
+    "idiomas": [
+      "común",
+      "goblin"
+    ],
+    "desafio": 1,
+    "xp": 200,
+    "rasgos": [
+      {
+        "nombre": "Bruto",
+        "descripcion": "Cuando impacta con un arma cuerpo a cuerpo hace un dado extra de daño, ya contemplado en el daño de las armas."
+      }
+    ],
+    "acciones": [
+      {
+        "nombre": "Lucero del Alba",
+        "tipo": "cuerpo_a_cuerpo",
+        "bonus": 4,
+        "alcance": "5 pies",
+        "dano": "11 (2d8+2) perforante",
+        "notas": null
+      },
+      {
+        "nombre": "Jabalina",
+        "tipo": "cuerpo_a_cuerpo_o_distancia",
+        "bonus": 4,
+        "alcance": "5 pies o 30/120 pies",
+        "dano": "5 (1d6+2) perforante (cuerpo a cuerpo) o 9 (2d6+2) perforante (a distancia)",
+        "notas": null
+      }
+    ],
+    "reacciones": [],
+    "acciones_limitadas": [],
+    "descripcion": "Los osgos son humanoides crueles e ingobernables que viven de intimidar a los débiles y no les gusta que anden dándoles órdenes. A pesar de su intimidante constitución, se mueven con sorprendente sigilo y son aficionados a la creación de emboscadas."
+  },
+  {
+    "id": "mon_sildar",
+    "nombre": "Sildar Hallwinter",
+    "tipo": "humanoide",
+    "etiquetas": [
+      "humano"
+    ],
+    "tamano": "mediano",
+    "alineamiento": "neutral bueno",
+    "sistema_origen": "2014",
+    "conversion_2024": null,
+    "aparece_en": [
+      "parte_1",
+      "parte_2",
+      "apendice_b"
+    ],
+    "clase_armadura": 16,
+    "clase_armadura_nota": "cota de malla",
+    "puntos_golpe": 27,
+    "puntos_golpe_dados": "5d8+5",
+    "velocidad": {
+      "caminar": 30,
+      "volar": null,
+      "nadar": null,
+      "escalar": null
+    },
+    "caracteristicas": {
+      "fue": 13,
+      "des": 10,
+      "con": 12,
+      "int": 10,
+      "sab": 11,
+      "car": 10
+    },
+    "modificadores": {
+      "fue": 1,
+      "des": 0,
+      "con": 1,
+      "int": 0,
+      "sab": 0,
+      "car": 0
+    },
+    "tiradas_salvacion": {
+      "fue": 3,
+      "con": 3
+    },
+    "habilidades": {
+      "percepcion": 2
+    },
+    "resistencias_dano": [],
+    "inmunidades_dano": [],
+    "vulnerabilidades_dano": [],
+    "inmunidades_condicion": [],
+    "sentidos": {
+      "vision_oscuridad": null,
+      "vision_ciega": null,
+      "vision_verdadera": null,
+      "percepcion_pasiva": 12
+    },
+    "idiomas": [
+      "común"
+    ],
+    "desafio": 1,
+    "xp": 200,
+    "rasgos": [],
+    "acciones": [
+      {
+        "nombre": "Multiataque",
+        "tipo": "especial",
+        "bonus": null,
+        "alcance": null,
+        "dano": null,
+        "notas": "Sildar ataca dos veces cuerpo a cuerpo."
+      },
+      {
+        "nombre": "Espada larga",
+        "tipo": "cuerpo_a_cuerpo",
+        "bonus": 3,
+        "alcance": "5 pies",
+        "dano": "5 (1d8+1) cortante",
+        "notas": null
+      },
+      {
+        "nombre": "Ballesta pesada",
+        "tipo": "distancia",
+        "bonus": 2,
+        "alcance": "100/400 pies",
+        "dano": "5 (1d10) perforante",
+        "notas": null
+      }
+    ],
+    "reacciones": [
+      {
+        "nombre": "Parar",
+        "descripcion": "Cuando un atacante golpee a Sildar con un arma cuerpo a cuerpo y Sildar puede ver al atacante, puede tirar 1d6 y añadir esa cifra a su CA contra el atacante."
+      }
+    ],
+    "acciones_limitadas": [],
+    "descripcion": "Sildar Hallwinter es un soldado retirado y mercenario que viene de la ciudad de Neverwinter. Él es un miembro leal de la Alianza de los Señores, una organización política que une a las diversas ciudades libres y pueblos del Norte."
+  },
+  {
+    "id": "mon_plebeyo",
+    "nombre": "Plebeyo",
+    "tipo": "humanoide",
+    "etiquetas": [],
+    "tamano": "mediano",
+    "alineamiento": "cualquier alineamiento",
+    "sistema_origen": "2014",
+    "conversion_2024": null,
+    "aparece_en": [
+      "parte_1",
+      "parte_2",
+      "apendice_b"
+    ],
+    "clase_armadura": 10,
+    "clase_armadura_nota": null,
+    "puntos_golpe": 4,
+    "puntos_golpe_dados": "1d8",
+    "velocidad": {
+      "caminar": 30,
+      "volar": null,
+      "nadar": null,
+      "escalar": null
+    },
+    "caracteristicas": {
+      "fue": 10,
+      "des": 10,
+      "con": 10,
+      "int": 10,
+      "sab": 10,
+      "car": 10
+    },
+    "modificadores": {
+      "fue": 0,
+      "des": 0,
+      "con": 0,
+      "int": 0,
+      "sab": 0,
+      "car": 0
+    },
+    "tiradas_salvacion": {},
+    "habilidades": {},
+    "resistencias_dano": [],
+    "inmunidades_dano": [],
+    "vulnerabilidades_dano": [],
+    "inmunidades_condicion": [],
+    "sentidos": {
+      "vision_oscuridad": null,
+      "vision_ciega": null,
+      "vision_verdadera": null,
+      "percepcion_pasiva": 10
+    },
+    "idiomas": [
+      "cualquiera (usualmente común)"
+    ],
+    "desafio": 0,
+    "xp": 10,
+    "rasgos": [],
+    "acciones": [
+      {
+        "nombre": "Garrote",
+        "tipo": "cuerpo_a_cuerpo",
+        "bonus": 2,
+        "alcance": "5 pies",
+        "dano": "5 (1d4) contundente",
+        "notas": null
+      }
+    ],
+    "reacciones": [],
+    "acciones_limitadas": [],
+    "descripcion": "En este grupo están incluidos los campesinos y siervos, esclavos y sirvientes, peregrinos, mercaderes, artesanos y ermitaños."
+  },
+  {
+    "id": "mon_araña_gigante",
+    "nombre": "Araña gigante",
+    "tipo": "bestia",
+    "etiquetas": [],
+    "tamano": "grande",
+    "alineamiento": "sin alineamiento",
+    "sistema_origen": "2014",
+    "conversion_2024": null,
+    "aparece_en": [
+      "parte_3",
+      "parte_4",
+      "apendice_b"
+    ],
+    "clase_armadura": 14,
+    "clase_armadura_nota": "armadura natural",
+    "puntos_golpe": 26,
+    "puntos_golpe_dados": "4d10+4",
+    "velocidad": {
+      "caminar": 30,
+      "volar": null,
+      "nadar": null,
+      "escalar": 30
+    },
+    "caracteristicas": {
+      "fue": 14,
+      "des": 16,
+      "con": 12,
+      "int": 2,
+      "sab": 11,
+      "car": 4
+    },
+    "modificadores": {
+      "fue": 2,
+      "des": 3,
+      "con": 1,
+      "int": -4,
+      "sab": 0,
+      "car": -3
+    },
+    "tiradas_salvacion": {},
+    "habilidades": {
+      "sigilo": 7
+    },
+    "resistencias_dano": [],
+    "inmunidades_dano": [],
+    "vulnerabilidades_dano": [],
+    "inmunidades_condicion": [],
+    "sentidos": {
+      "vision_ciega": 10,
+      "vision_oscuridad": 60,
+      "vision_verdadera": null,
+      "percepcion_pasiva": 10
+    },
+    "idiomas": [],
+    "desafio": 1,
+    "xp": 200,
+    "rasgos": [
+      {
+        "nombre": "Escalada arácnida",
+        "descripcion": "La araña puede escalar superficies difíciles, incluido colgando cabeza abajo en techos, sin necesidad de hacer tiradas de habilidad."
+      },
+      {
+        "nombre": "Red sensora",
+        "descripcion": "Mientras se esté en contacto con una red, la araña sabe la localización exacta de otra criatura que esté en contacto con la misma red."
+      },
+      {
+        "nombre": "Caminante de la tela de araña",
+        "descripcion": "La araña ignora cualquier restricción de movimiento causada por cualquier tipo de red."
+      }
+    ],
+    "acciones": [
+      {
+        "nombre": "Mordisco",
+        "tipo": "cuerpo_a_cuerpo",
+        "bonus": 5,
+        "alcance": "5 pies",
+        "dano": "7 (1d8+1) perforante",
+        "notas": "La criatura debe superar una tirada de salvación de Constitución CD 11 o recibe 9 (2d8) de daño por veneno y queda envenenada. Si el veneno reduce sus PG a 0, queda estable pero envenenada durante una hora y paralizada mientras esté en ese estado."
+      },
+      {
+        "nombre": "Red",
+        "tipo": "distancia",
+        "bonus": 5,
+        "alcance": "30/60 pies",
+        "dano": null,
+        "notas": "Recarga 5-6. El objetivo queda neutralizado por la red. Como acción puede hacer salvación de Fuerza CD 12 para liberarse. La red puede ser atacada (CA 10, 5 PG, vulnerable al fuego, inmune a contundente/veneno/psíquico)."
+      }
+    ],
+    "reacciones": [],
+    "acciones_limitadas": [],
+    "descripcion": "Las arañas gigantes tejen telarañas en cuevas y bosques. Su veneno paraliza a sus presas."
+  },
+  {
+    "id": "mon_grick",
+    "nombre": "Grick",
+    "tipo": "monstruosidad",
+    "etiquetas": [],
+    "tamano": "mediano",
+    "alineamiento": "neutral",
+    "sistema_origen": "2014",
+    "conversion_2024": null,
+    "aparece_en": [
+      "parte_3",
+      "parte_4",
+      "apendice_b"
+    ],
+    "clase_armadura": 14,
+    "clase_armadura_nota": "armadura natural",
+    "puntos_golpe": 27,
+    "puntos_golpe_dados": "6d8",
+    "velocidad": {
+      "caminar": 30,
+      "volar": null,
+      "nadar": null,
+      "escalar": 30
+    },
+    "caracteristicas": {
+      "fue": 14,
+      "des": 14,
+      "con": 11,
+      "int": 3,
+      "sab": 14,
+      "car": 5
+    },
+    "modificadores": {
+      "fue": 2,
+      "des": 2,
+      "con": 0,
+      "int": -4,
+      "sab": 2,
+      "car": -3
+    },
+    "tiradas_salvacion": {},
+    "habilidades": {},
+    "resistencias_dano": [
+      "contundente de armas no mágicas",
+      "perforante de armas no mágicas",
+      "cortante de armas no mágicas"
+    ],
+    "inmunidades_dano": [],
+    "vulnerabilidades_dano": [],
+    "inmunidades_condicion": [],
+    "sentidos": {
+      "vision_oscuridad": 60,
+      "vision_ciega": null,
+      "vision_verdadera": null,
+      "percepcion_pasiva": 12
+    },
+    "idiomas": [],
+    "desafio": 2,
+    "xp": 450,
+    "rasgos": [
+      {
+        "nombre": "Camuflaje en la piedra",
+        "descripcion": "El grick tiene ventaja en las tiradas de Destreza (Sigilo) cuando intente camuflarse en terrenos rocosos."
+      }
+    ],
+    "acciones": [
+      {
+        "nombre": "Multiataque",
+        "tipo": "especial",
+        "bonus": null,
+        "alcance": null,
+        "dano": null,
+        "notas": "El grick hace un ataque con sus tentáculos. Si el ataque impacta, puede hacer otro ataque con su pico a ese mismo objetivo."
+      },
+      {
+        "nombre": "Tentáculos",
+        "tipo": "cuerpo_a_cuerpo",
+        "bonus": 4,
+        "alcance": "5 pies",
+        "dano": "9 (2d6+2) cortante",
+        "notas": null
+      },
+      {
+        "nombre": "Pico",
+        "tipo": "cuerpo_a_cuerpo",
+        "bonus": 4,
+        "alcance": "5 pies",
+        "dano": "5 (1d6+2) perforante",
+        "notas": null
+      }
+    ],
+    "reacciones": [],
+    "acciones_limitadas": [],
+    "descripcion": "El grick se parece a un gusano que se camufla con la piedra de su guarida. Solo cuando se aproxima a su presa, se alza desplegando sus cuatro tentáculos, para revelar un hambriento y chasqueante pico."
+  },
+  {
+    "id": "mon_estirge",
+    "nombre": "Estirge",
+    "tipo": "bestia",
+    "etiquetas": [],
+    "tamano": "pequeño",
+    "alineamiento": "sin alineamiento",
+    "sistema_origen": "2014",
+    "conversion_2024": null,
+    "aparece_en": [
+      "parte_1",
+      "parte_3",
+      "parte_4",
+      "apendice_b"
+    ],
+    "clase_armadura": 14,
+    "clase_armadura_nota": "armadura natural",
+    "puntos_golpe": 2,
+    "puntos_golpe_dados": "1d4",
+    "velocidad": {
+      "caminar": 10,
+      "volar": 40,
+      "nadar": null,
+      "escalar": null
+    },
+    "caracteristicas": {
+      "fue": 4,
+      "des": 16,
+      "con": 11,
+      "int": 2,
+      "sab": 8,
+      "car": 6
+    },
+    "modificadores": {
+      "fue": -3,
+      "des": 3,
+      "con": 0,
+      "int": -4,
+      "sab": -1,
+      "car": -2
+    },
+    "tiradas_salvacion": {},
+    "habilidades": {},
+    "resistencias_dano": [],
+    "inmunidades_dano": [],
+    "vulnerabilidades_dano": [],
+    "inmunidades_condicion": [],
+    "sentidos": {
+      "vision_oscuridad": 60,
+      "vision_ciega": null,
+      "vision_verdadera": null,
+      "percepcion_pasiva": 9
+    },
+    "idiomas": [],
+    "desafio": 0.125,
+    "xp": 25,
+    "rasgos": [],
+    "acciones": [
+      {
+        "nombre": "Drenar sangre",
+        "tipo": "cuerpo_a_cuerpo",
+        "bonus": 5,
+        "alcance": "5 pies",
+        "dano": "5 (1d4+3) perforante",
+        "notas": "La estirge se pega al objetivo. Mientras está unida, no ataca. En su lugar, al inicio de cada turno, el objetivo pierde 5 (1d4+3) PG por pérdida de sangre. La estirge puede despegarse gastando 5 pies de movimiento, o cuando ha drenado 10 PG o el objetivo muere. Una criatura, incluyendo el objetivo, puede usar su acción para despegarla."
+      }
+    ],
+    "reacciones": [],
+    "acciones_limitadas": [],
+    "descripcion": "Las estirges son una plaga alada que se alimenta de la sangre de los seres vivos, a través de su probóscide, que utiliza para perforar la carne de la víctima mientras agarra a su presa con las garras ganchudas."
+  },
+  {
+    "id": "mon_ghoul",
+    "nombre": "Necrófago (ghoul)",
+    "tipo": "no_muerto",
+    "etiquetas": [],
+    "tamano": "mediano",
+    "alineamiento": "caótico maligno",
+    "sistema_origen": "2014",
+    "conversion_2024": null,
+    "aparece_en": [
+      "parte_3",
+      "parte_4",
+      "apendice_b"
+    ],
+    "clase_armadura": 12,
+    "clase_armadura_nota": null,
+    "puntos_golpe": 22,
+    "puntos_golpe_dados": "5d8",
+    "velocidad": {
+      "caminar": 30,
+      "volar": null,
+      "nadar": null,
+      "escalar": null
+    },
+    "caracteristicas": {
+      "fue": 13,
+      "des": 15,
+      "con": 10,
+      "int": 7,
+      "sab": 10,
+      "car": 6
+    },
+    "modificadores": {
+      "fue": 1,
+      "des": 2,
+      "con": 0,
+      "int": -2,
+      "sab": 0,
+      "car": -2
+    },
+    "tiradas_salvacion": {},
+    "habilidades": {},
+    "resistencias_dano": [],
+    "inmunidades_dano": [
+      "veneno"
+    ],
+    "vulnerabilidades_dano": [],
+    "inmunidades_condicion": [
+      "encantado",
+      "envenenado"
+    ],
+    "sentidos": {
+      "vision_oscuridad": 60,
+      "vision_ciega": null,
+      "vision_verdadera": null,
+      "percepcion_pasiva": 10
+    },
+    "idiomas": [
+      "común"
+    ],
+    "desafio": 1,
+    "xp": 200,
+    "rasgos": [],
+    "acciones": [
+      {
+        "nombre": "Mordisco",
+        "tipo": "cuerpo_a_cuerpo",
+        "bonus": 3,
+        "alcance": "5 pies",
+        "dano": "9 (2d6+2) perforante",
+        "notas": null
+      },
+      {
+        "nombre": "Garras",
+        "tipo": "cuerpo_a_cuerpo",
+        "bonus": 3,
+        "alcance": "5 pies",
+        "dano": "7 (2d4+2) cortante",
+        "notas": "Si el objetivo es una criatura que no sea no-muerto ni elfo, debe superar una tirada de salvación de Constitución CD 10 o queda paralizada durante 1 minuto. Puede repetir la salvación al final de cada uno de sus turnos."
+      }
+    ],
+    "reacciones": [],
+    "acciones_limitadas": [],
+    "descripcion": "Los necrófagos rondan la noche en grupo, guiados por una insaciable hambre de carne humana. Como gusanos o escarabajos carroñeros, habitan en lugares donde existe la muerte y putrefacción."
+  },
+  {
+    "id": "mon_esqueleto",
+    "nombre": "Esqueleto",
+    "tipo": "no_muerto",
+    "etiquetas": [],
+    "tamano": "mediano",
+    "alineamiento": "legal maligno",
+    "sistema_origen": "2014",
+    "conversion_2024": null,
+    "aparece_en": [
+      "parte_2",
+      "parte_3",
+      "parte_4",
+      "apendice_b"
+    ],
+    "clase_armadura": 13,
+    "clase_armadura_nota": "restos de armadura",
+    "puntos_golpe": 13,
+    "puntos_golpe_dados": "2d8+4",
+    "velocidad": {
+      "caminar": 30,
+      "volar": null,
+      "nadar": null,
+      "escalar": null
+    },
+    "caracteristicas": {
+      "fue": 10,
+      "des": 14,
+      "con": 15,
+      "int": 6,
+      "sab": 8,
+      "car": 5
+    },
+    "modificadores": {
+      "fue": 0,
+      "des": 2,
+      "con": 2,
+      "int": -2,
+      "sab": -1,
+      "car": -3
+    },
+    "tiradas_salvacion": {},
+    "habilidades": {},
+    "resistencias_dano": [],
+    "inmunidades_dano": [
+      "veneno"
+    ],
+    "vulnerabilidades_dano": [
+      "contundente"
+    ],
+    "inmunidades_condicion": [
+      "envenenado"
+    ],
+    "sentidos": {
+      "vision_oscuridad": 60,
+      "vision_ciega": null,
+      "vision_verdadera": null,
+      "percepcion_pasiva": 9
+    },
+    "idiomas": [
+      "conoce las lenguas que conocía en vida pero no puede hablar"
+    ],
+    "desafio": 0.25,
+    "xp": 50,
+    "rasgos": [],
+    "acciones": [
+      {
+        "nombre": "Espada corta",
+        "tipo": "cuerpo_a_cuerpo",
+        "bonus": 4,
+        "alcance": "5 pies",
+        "dano": "5 (1d6+2) perforante",
+        "notas": null
+      },
+      {
+        "nombre": "Arco corto",
+        "tipo": "distancia",
+        "bonus": 4,
+        "alcance": "80/320 pies",
+        "dano": "5 (1d6+2) perforante",
+        "notas": null
+      }
+    ],
+    "reacciones": [],
+    "acciones_limitadas": [],
+    "descripcion": "Ensamblajes de huesos animados por magia oscura, los esqueletos acatan las órdenes de quienes los crearon o se alzan por voluntad propia en lugares saturados de magia mortal."
+  },
+  {
+    "id": "mon_zombi",
+    "nombre": "Zombi",
+    "tipo": "no_muerto",
+    "etiquetas": [],
+    "tamano": "mediano",
+    "alineamiento": "neutral maligno",
+    "sistema_origen": "2014",
+    "conversion_2024": null,
+    "aparece_en": [
+      "parte_3",
+      "parte_4",
+      "apendice_b"
+    ],
+    "clase_armadura": 8,
+    "clase_armadura_nota": null,
+    "puntos_golpe": 22,
+    "puntos_golpe_dados": "3d8+9",
+    "velocidad": {
+      "caminar": 20,
+      "volar": null,
+      "nadar": null,
+      "escalar": null
+    },
+    "caracteristicas": {
+      "fue": 13,
+      "des": 6,
+      "con": 16,
+      "int": 3,
+      "sab": 6,
+      "car": 5
+    },
+    "modificadores": {
+      "fue": 1,
+      "des": -2,
+      "con": 3,
+      "int": -4,
+      "sab": -2,
+      "car": -3
+    },
+    "tiradas_salvacion": {
+      "sab": 0
+    },
+    "habilidades": {},
+    "resistencias_dano": [],
+    "inmunidades_dano": [
+      "veneno"
+    ],
+    "vulnerabilidades_dano": [],
+    "inmunidades_condicion": [
+      "envenenado"
+    ],
+    "sentidos": {
+      "vision_oscuridad": 60,
+      "vision_ciega": null,
+      "vision_verdadera": null,
+      "percepcion_pasiva": 8
+    },
+    "idiomas": [
+      "entiende todas las que conociera en vida, pero no habla"
+    ],
+    "desafio": 0.25,
+    "xp": 50,
+    "rasgos": [
+      {
+        "nombre": "Fortaleza de no muerto",
+        "descripcion": "Si el daño reduce los puntos de golpe del zombi a 0, puede hacer una tirada de salvación por Constitución con una dificultad de 5 + el daño recibido, a menos que sea por daño radiante o por golpe crítico. Si la supera, el zombi se mantiene con 1 punto de golpe."
+      }
+    ],
+    "acciones": [
+      {
+        "nombre": "Golpe",
+        "tipo": "cuerpo_a_cuerpo",
+        "bonus": 3,
+        "alcance": "5 pies",
+        "dano": "4 (1d6+1) contundente",
+        "notas": null
+      }
+    ],
+    "reacciones": [],
+    "acciones_limitadas": [],
+    "descripcion": "Los zombis son cadáveres imbuidos de una apariencia de vida, reteniendo ningún vestigio de lo que fueron."
+  },
+  {
+    "id": "mon_gelatina_ocre",
+    "nombre": "Gelatina ocre",
+    "tipo": "limo",
+    "etiquetas": [],
+    "tamano": "grande",
+    "alineamiento": "sin alineamiento",
+    "sistema_origen": "2014",
+    "conversion_2024": null,
+    "aparece_en": [
+      "parte_4",
+      "apendice_b"
+    ],
+    "clase_armadura": 8,
+    "clase_armadura_nota": null,
+    "puntos_golpe": 45,
+    "puntos_golpe_dados": "6d10+12",
+    "velocidad": {
+      "caminar": 10,
+      "volar": null,
+      "nadar": null,
+      "escalar": 10
+    },
+    "caracteristicas": {
+      "fue": 14,
+      "des": 6,
+      "con": 14,
+      "int": 2,
+      "sab": 6,
+      "car": 1
+    },
+    "modificadores": {
+      "fue": 2,
+      "des": -2,
+      "con": 2,
+      "int": -4,
+      "sab": -2,
+      "car": -5
+    },
+    "tiradas_salvacion": {},
+    "habilidades": {},
+    "resistencias_dano": [],
+    "inmunidades_dano": [
+      "eléctrico",
+      "cortante"
+    ],
+    "vulnerabilidades_dano": [],
+    "inmunidades_condicion": [
+      "cegado",
+      "encantado",
+      "asustado",
+      "sordo",
+      "tumbado"
+    ],
+    "sentidos": {
+      "vision_ciega": 60,
+      "vision_oscuridad": null,
+      "vision_verdadera": null,
+      "percepcion_pasiva": 8
+    },
+    "idiomas": [],
+    "desafio": 2,
+    "xp": 450,
+    "rasgos": [
+      {
+        "nombre": "Amorfo",
+        "descripcion": "La gelatina puede moverse a través de un espacio tan estrecho como hasta una pulgada sin apretujarse."
+      },
+      {
+        "nombre": "Trepar cual arácnido",
+        "descripcion": "La gelatina puede escalar superficies difíciles, incluyendo estar colgada en techos sin necesidad de hacer tiradas de habilidad."
+      }
+    ],
+    "acciones": [
+      {
+        "nombre": "Pseudópodo",
+        "tipo": "cuerpo_a_cuerpo",
+        "bonus": 4,
+        "alcance": "5 pies",
+        "dano": "9 (2d6+2) contundente más 3 (1d6) ácido",
+        "notas": null
+      }
+    ],
+    "reacciones": [
+      {
+        "nombre": "División",
+        "descripcion": "Cuando un limo mediano o grande es dañado con rayos o cortes, se divide en dos nuevos limos, si tiene al menos 10 puntos de golpe. Cada nuevo limo tiene un número de puntos de golpe igual a la mitad del limo original, redondeados hacia abajo. Los nuevos limos son una talla menor que el original."
+      }
+    ],
+    "acciones_limitadas": [],
+    "descripcion": "Las gelatinas ocres acechan y consumen criaturas orgánicas y cuentan con suficiente astucia para evitar grupos grandes."
+  },
+  {
+    "id": "mon_oso_lechuza",
+    "nombre": "Oso lechuza",
+    "tipo": "monstruosidad",
+    "etiquetas": [],
+    "tamano": "grande",
+    "alineamiento": "sin alineamiento",
+    "sistema_origen": "2014",
+    "conversion_2024": null,
+    "aparece_en": [
+      "parte_3",
+      "apendice_b"
+    ],
+    "clase_armadura": 13,
+    "clase_armadura_nota": "armadura natural",
+    "puntos_golpe": 59,
+    "puntos_golpe_dados": "7d10+21",
+    "velocidad": {
+      "caminar": 40,
+      "volar": null,
+      "nadar": null,
+      "escalar": null
+    },
+    "caracteristicas": {
+      "fue": 20,
+      "des": 12,
+      "con": 17,
+      "int": 3,
+      "sab": 12,
+      "car": 7
+    },
+    "modificadores": {
+      "fue": 5,
+      "des": 1,
+      "con": 3,
+      "int": -4,
+      "sab": 1,
+      "car": -2
+    },
+    "tiradas_salvacion": {},
+    "habilidades": {
+      "percepcion": 3
+    },
+    "resistencias_dano": [],
+    "inmunidades_dano": [],
+    "vulnerabilidades_dano": [],
+    "inmunidades_condicion": [],
+    "sentidos": {
+      "vision_oscuridad": 60,
+      "vision_ciega": null,
+      "vision_verdadera": null,
+      "percepcion_pasiva": 13
+    },
+    "idiomas": [],
+    "desafio": 3,
+    "xp": 700,
+    "rasgos": [
+      {
+        "nombre": "Vista certera y olfato",
+        "descripcion": "Los osos lechuzas tienen ventaja en las pruebas de Sabiduría (Percepción) que se basen en el olfato o la vista."
+      }
+    ],
+    "acciones": [
+      {
+        "nombre": "Multiataque",
+        "tipo": "especial",
+        "bonus": null,
+        "alcance": null,
+        "dano": null,
+        "notas": "El oso lechuza hace dos ataques, uno con su pico y uno con sus garras."
+      },
+      {
+        "nombre": "Pico",
+        "tipo": "cuerpo_a_cuerpo",
+        "bonus": 7,
+        "alcance": "5 pies",
+        "dano": "10 (1d10+5) perforante",
+        "notas": null
+      },
+      {
+        "nombre": "Garras",
+        "tipo": "cuerpo_a_cuerpo",
+        "bonus": 7,
+        "alcance": "5 pies",
+        "dano": "14 (2d8+5) cortante",
+        "notas": null
+      }
+    ],
+    "reacciones": [],
+    "acciones_limitadas": [],
+    "descripcion": "La reputación del oso lechuza de ferocidad, terquedad y mal humor puro hace que sea uno de los depredadores más temidos de la naturaleza. Hay pocos, si es que hay, que hayan sobrevivido a un hambriento oso lechuza."
+  },
+  {
+    "id": "mon_hobgoblin",
+    "nombre": "Hobgoblin",
+    "tipo": "humanoide",
+    "etiquetas": [
+      "goblinoide"
+    ],
+    "tamano": "mediano",
+    "alineamiento": "legal maligno",
+    "sistema_origen": "2014",
+    "conversion_2024": null,
+    "aparece_en": [
+      "parte_3",
+      "parte_4",
+      "apendice_b"
+    ],
+    "clase_armadura": 18,
+    "clase_armadura_nota": "cota de malla, escudo",
+    "puntos_golpe": 11,
+    "puntos_golpe_dados": "2d8+2",
+    "velocidad": {
+      "caminar": 30,
+      "volar": null,
+      "nadar": null,
+      "escalar": null
+    },
+    "caracteristicas": {
+      "fue": 13,
+      "des": 14,
+      "con": 12,
+      "int": 10,
+      "sab": 10,
+      "car": 9
+    },
+    "modificadores": {
+      "fue": 1,
+      "des": 2,
+      "con": 1,
+      "int": 0,
+      "sab": 0,
+      "car": -1
+    },
+    "tiradas_salvacion": {},
+    "habilidades": {},
+    "resistencias_dano": [],
+    "inmunidades_dano": [],
+    "vulnerabilidades_dano": [],
+    "inmunidades_condicion": [],
+    "sentidos": {
+      "vision_oscuridad": 60,
+      "vision_ciega": null,
+      "vision_verdadera": null,
+      "percepcion_pasiva": 10
+    },
+    "idiomas": [
+      "común",
+      "goblin"
+    ],
+    "desafio": 0.5,
+    "xp": 100,
+    "rasgos": [
+      {
+        "nombre": "Ventaja marcial",
+        "descripcion": "Una vez por turno, el hobgoblin puede hacer 7 (2d6) puntos de daño extra a una criatura si impacta con un ataque con un arma y está a 5 pies de un aliado que no esté incapacitado."
+      }
+    ],
+    "acciones": [
+      {
+        "nombre": "Espada larga",
+        "tipo": "cuerpo_a_cuerpo",
+        "bonus": 3,
+        "alcance": "5 pies",
+        "dano": "5 (1d8+1) cortante",
+        "notas": null
+      },
+      {
+        "nombre": "Arco largo",
+        "tipo": "distancia",
+        "bonus": 3,
+        "alcance": "150/600 pies",
+        "dano": "5 (1d8+1) perforante",
+        "notas": null
+      }
+    ],
+    "reacciones": [],
+    "acciones_limitadas": [],
+    "descripcion": "Los hobgoblins son astutos y disciplinados guerreros que ansían conquistar. Imponen una estricta jerarquía militar y se encuentran a menudo en compañía de goblins y osgos."
+  },
+  {
+    "id": "mon_orco",
+    "nombre": "Orco",
+    "tipo": "humanoide",
+    "etiquetas": [
+      "orco"
+    ],
+    "tamano": "mediano",
+    "alineamiento": "caótico maligno",
+    "sistema_origen": "2014",
+    "conversion_2024": null,
+    "aparece_en": [
+      "parte_3",
+      "apendice_b"
+    ],
+    "clase_armadura": 13,
+    "clase_armadura_nota": "armadura de cuero",
+    "puntos_golpe": 15,
+    "puntos_golpe_dados": "2d8+6",
+    "velocidad": {
+      "caminar": 30,
+      "volar": null,
+      "nadar": null,
+      "escalar": null
+    },
+    "caracteristicas": {
+      "fue": 16,
+      "des": 12,
+      "con": 16,
+      "int": 7,
+      "sab": 11,
+      "car": 10
+    },
+    "modificadores": {
+      "fue": 3,
+      "des": 1,
+      "con": 3,
+      "int": -2,
+      "sab": 0,
+      "car": 0
+    },
+    "tiradas_salvacion": {},
+    "habilidades": {
+      "intimidacion": 2
+    },
+    "resistencias_dano": [],
+    "inmunidades_dano": [],
+    "vulnerabilidades_dano": [],
+    "inmunidades_condicion": [],
+    "sentidos": {
+      "vision_oscuridad": 60,
+      "vision_ciega": null,
+      "vision_verdadera": null,
+      "percepcion_pasiva": 10
+    },
+    "idiomas": [
+      "común",
+      "orco"
+    ],
+    "desafio": 0.5,
+    "xp": 100,
+    "rasgos": [
+      {
+        "nombre": "Agresivo",
+        "descripcion": "Como acción adicional, el orco puede moverse más allá de su capacidad hasta una criatura hostil que pueda ver."
+      }
+    ],
+    "acciones": [
+      {
+        "nombre": "Gran hacha",
+        "tipo": "cuerpo_a_cuerpo",
+        "bonus": 5,
+        "alcance": "5 pies",
+        "dano": "9 (1d12+3) cortante",
+        "notas": null
+      },
+      {
+        "nombre": "Jabalina",
+        "tipo": "cuerpo_a_cuerpo_o_distancia",
+        "bonus": 5,
+        "alcance": "5 pies o 30/120 pies",
+        "dano": "6 (1d6+3) perforante",
+        "notas": null
+      }
+    ],
+    "reacciones": [],
+    "acciones_limitadas": [],
+    "descripcion": "Los orcos son reconocidos por su barbarie. Tienen posturas encorvadas, frentes bajas y caras porcinas con colmillos prominentes que se asemejan a los de un jabalí."
+  },
+  {
+    "id": "mon_ogro",
+    "nombre": "Ogro",
+    "tipo": "gigante",
+    "etiquetas": [],
+    "tamano": "grande",
+    "alineamiento": "caótico maligno",
+    "sistema_origen": "2014",
+    "conversion_2024": null,
+    "aparece_en": [
+      "parte_3",
+      "apendice_b"
+    ],
+    "clase_armadura": 11,
+    "clase_armadura_nota": "armadura de pieles",
+    "puntos_golpe": 59,
+    "puntos_golpe_dados": "7d10+21",
+    "velocidad": {
+      "caminar": 40,
+      "volar": null,
+      "nadar": null,
+      "escalar": null
+    },
+    "caracteristicas": {
+      "fue": 19,
+      "des": 8,
+      "con": 16,
+      "int": 5,
+      "sab": 7,
+      "car": 7
+    },
+    "modificadores": {
+      "fue": 4,
+      "des": -1,
+      "con": 3,
+      "int": -3,
+      "sab": -2,
+      "car": -2
+    },
+    "tiradas_salvacion": {},
+    "habilidades": {},
+    "resistencias_dano": [],
+    "inmunidades_dano": [],
+    "vulnerabilidades_dano": [],
+    "inmunidades_condicion": [],
+    "sentidos": {
+      "vision_oscuridad": 60,
+      "vision_ciega": null,
+      "vision_verdadera": null,
+      "percepcion_pasiva": 8
+    },
+    "idiomas": [
+      "común",
+      "gigante"
+    ],
+    "desafio": 2,
+    "xp": 450,
+    "rasgos": [],
+    "acciones": [
+      {
+        "nombre": "Gran porra",
+        "tipo": "cuerpo_a_cuerpo",
+        "bonus": 6,
+        "alcance": "5 pies",
+        "dano": "13 (2d8+4) contundente",
+        "notas": null
+      },
+      {
+        "nombre": "Jabalina",
+        "tipo": "cuerpo_a_cuerpo_o_distancia",
+        "bonus": 6,
+        "alcance": "5 pies o 30/120 pies",
+        "dano": "11 (2d6+4) perforante",
+        "notas": null
+      }
+    ],
+    "reacciones": [],
+    "acciones_limitadas": [],
+    "descripcion": "Los ogros son gigantes perezosos y coléricos de diez pies de altura que viven asaltando y hundiendo entre los restos."
+  },
+  {
+    "id": "mon_rama_marchita",
+    "nombre": "Rama marchita",
+    "tipo": "planta",
+    "etiquetas": [],
+    "tamano": "pequeño",
+    "alineamiento": "neutral malvado",
+    "sistema_origen": "2014",
+    "conversion_2024": null,
+    "aparece_en": [
+      "parte_3",
+      "apendice_b"
+    ],
+    "clase_armadura": 13,
+    "clase_armadura_nota": "armadura natural",
+    "puntos_golpe": 4,
+    "puntos_golpe_dados": "1d6+1",
+    "velocidad": {
+      "caminar": 20,
+      "volar": null,
+      "nadar": null,
+      "escalar": null
+    },
+    "caracteristicas": {
+      "fue": 6,
+      "des": 13,
+      "con": 12,
+      "int": 4,
+      "sab": 8,
+      "car": 3
+    },
+    "modificadores": {
+      "fue": -2,
+      "des": 1,
+      "con": 1,
+      "int": -3,
+      "sab": -1,
+      "car": -4
+    },
+    "tiradas_salvacion": {},
+    "habilidades": {
+      "sigilo": 3
+    },
+    "resistencias_dano": [],
+    "inmunidades_dano": [],
+    "vulnerabilidades_dano": [
+      "fuego"
+    ],
+    "inmunidades_condicion": [
+      "cegado",
+      "sordo"
+    ],
+    "sentidos": {
+      "vision_ciega": 60,
+      "vision_oscuridad": null,
+      "vision_verdadera": null,
+      "percepcion_pasiva": 9
+    },
+    "idiomas": [
+      "entiende lengua común pero no habla"
+    ],
+    "desafio": 0.125,
+    "xp": 25,
+    "rasgos": [
+      {
+        "nombre": "Falsa apariencia",
+        "descripcion": "Este monstruo recuerda a un arbusto. Mientras no está en movimiento entre la vegetación, puede ocultarse sin estar fuera de visión."
+      }
+    ],
+    "acciones": [
+      {
+        "nombre": "Garras",
+        "tipo": "cuerpo_a_cuerpo",
+        "bonus": 3,
+        "alcance": "5 pies",
+        "dano": "3 (1d4+1) perforante",
+        "notas": null
+      }
+    ],
+    "reacciones": [],
+    "acciones_limitadas": [],
+    "descripcion": "Esta escurridiza criatura parece una pequeña planta sin hojas, enzarzándose entre las plantas ordinarias."
+  },
+  {
+    "id": "mon_rufian_marca_roja",
+    "nombre": "Rufián de la Marca Roja",
+    "tipo": "humanoide",
+    "etiquetas": [
+      "humano"
+    ],
+    "tamano": "mediano",
+    "alineamiento": "neutral maligno",
+    "sistema_origen": "2014",
+    "conversion_2024": null,
+    "aparece_en": [
+      "parte_2",
+      "apendice_b"
+    ],
+    "clase_armadura": 14,
+    "clase_armadura_nota": "cuero tachonado",
+    "puntos_golpe": 16,
+    "puntos_golpe_dados": "3d8+3",
+    "velocidad": {
+      "caminar": 30,
+      "volar": null,
+      "nadar": null,
+      "escalar": null
+    },
+    "caracteristicas": {
+      "fue": 11,
+      "des": 14,
+      "con": 12,
+      "int": 9,
+      "sab": 9,
+      "car": 11
+    },
+    "modificadores": {
+      "fue": 0,
+      "des": 2,
+      "con": 1,
+      "int": -1,
+      "sab": -1,
+      "car": 0
+    },
+    "tiradas_salvacion": {},
+    "habilidades": {
+      "intimidacion": 2
+    },
+    "resistencias_dano": [],
+    "inmunidades_dano": [],
+    "vulnerabilidades_dano": [],
+    "inmunidades_condicion": [],
+    "sentidos": {
+      "vision_oscuridad": null,
+      "vision_ciega": null,
+      "vision_verdadera": null,
+      "percepcion_pasiva": 9
+    },
+    "idiomas": [
+      "común"
+    ],
+    "desafio": 0.5,
+    "xp": 100,
+    "rasgos": [],
+    "acciones": [
+      {
+        "nombre": "Multiataque",
+        "tipo": "especial",
+        "bonus": null,
+        "alcance": null,
+        "dano": null,
+        "notas": "Los rufianes de la Marca Roja hacen dos ataques con la espada corta."
+      },
+      {
+        "nombre": "Espada corta",
+        "tipo": "cuerpo_a_cuerpo",
+        "bonus": 4,
+        "alcance": "5 pies",
+        "dano": "5 (1d6+2) perforante",
+        "notas": null
+      }
+    ],
+    "reacciones": [],
+    "acciones_limitadas": [],
+    "descripcion": "Los rufianes de la Marca Roja son pequeños matones despiadados y hábiles en la intimidación y la violencia. Trabajan por dinero y no tienen escrúpulos."
+  },
+  {
+    "id": "mon_cultista",
+    "nombre": "Cultista",
+    "tipo": "humanoide",
+    "etiquetas": [],
+    "tamano": "mediano",
+    "alineamiento": "cualquier alineamiento",
+    "sistema_origen": "2014",
+    "conversion_2024": null,
+    "aparece_en": [
+      "parte_3",
+      "apendice_b"
+    ],
+    "clase_armadura": 12,
+    "clase_armadura_nota": "armadura de cuero",
+    "puntos_golpe": 9,
+    "puntos_golpe_dados": "2d8",
+    "velocidad": {
+      "caminar": 30,
+      "volar": null,
+      "nadar": null,
+      "escalar": null
+    },
+    "caracteristicas": {
+      "fue": 11,
+      "des": 12,
+      "con": 10,
+      "int": 10,
+      "sab": 11,
+      "car": 10
+    },
+    "modificadores": {
+      "fue": 0,
+      "des": 1,
+      "con": 0,
+      "int": 0,
+      "sab": 0,
+      "car": 0
+    },
+    "tiradas_salvacion": {},
+    "habilidades": {
+      "engaño": 2,
+      "religion": 2
+    },
+    "resistencias_dano": [],
+    "inmunidades_dano": [],
+    "vulnerabilidades_dano": [],
+    "inmunidades_condicion": [],
+    "sentidos": {
+      "vision_oscuridad": null,
+      "vision_ciega": null,
+      "vision_verdadera": null,
+      "percepcion_pasiva": 10
+    },
+    "idiomas": [
+      "cualquiera (usualmente común)"
+    ],
+    "desafio": 0.125,
+    "xp": 25,
+    "rasgos": [
+      {
+        "nombre": "Devoción Oscura",
+        "descripcion": "Los cultistas tienen ventaja en las tiradas de salvación contra encantamientos o miedo."
+      }
+    ],
+    "acciones": [
+      {
+        "nombre": "Cimitarra",
+        "tipo": "cuerpo_a_cuerpo",
+        "bonus": 3,
+        "alcance": "5 pies",
+        "dano": "4 (1d6+1) perforante",
+        "notas": null
+      }
+    ],
+    "reacciones": [],
+    "acciones_limitadas": [],
+    "descripcion": "Los cultistas juran lealtad a poderes oscuros. Ocultan sus actividades para no ser condenados, apresados y ejecutados por sus creencias."
+  }
+]

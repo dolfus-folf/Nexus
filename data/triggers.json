@@ -1,0 +1,106 @@
+[
+  {
+    "id": "trg_aviso_goblins_area2",
+    "nombre": "Los goblins del área 2 detectan a los PJs",
+    "lugar_id": "loc_cragmaw_entrada",
+    "tipo": "alarma",
+    "disparador": "Si los PJs hacen mucho ruido en el área 1 (discutir, acampar, cortar madera)",
+    "efecto": "Los goblins del área 2 atacan a través de los arbustos con cobertura de tres cuartos.",
+    "revelado": false,
+    "one_shot": true,
+    "tags": [
+      "goblins",
+      "alarma"
+    ]
+  },
+  {
+    "id": "trg_frenesi_lobos",
+    "nombre": "Los lobos entran en frenesí",
+    "lugar_id": "loc_cragmaw_perrera",
+    "tipo": "cambio_estado",
+    "disparador": "Si los lobos son provocados por enemigos fuera de su alcance",
+    "efecto": "Cada turno que cualquier PJ esté a la vista, los lobos intentan una prueba de Fuerza CD 15 para arrancar la vara de hierro. Con el primer éxito, la CD baja a 10. Con el segundo, se liberan.",
+    "revelado": false,
+    "one_shot": false,
+    "tags": [
+      "lobos",
+      "frenesi"
+    ]
+  },
+  {
+    "id": "trg_alarma_riada",
+    "nombre": "Alarma para liberar la riada",
+    "lugar_id": "loc_cragmaw_paso_superior",
+    "tipo": "alarma",
+    "disparador": "El goblin del puente descubre a los PJs",
+    "efecto": "Da la señal de alarma a los goblins del área 7 para que liberen la riada. Activa el evento evt_riada_area5.",
+    "revelado": false,
+    "one_shot": true,
+    "tags": [
+      "riada",
+      "alarma",
+      "goblin_puente"
+    ]
+  },
+  {
+    "id": "trg_liberar_riada",
+    "nombre": "Los goblins del área 7 liberan la riada",
+    "lugar_id": "loc_cragmaw_cueva_piscinas",
+    "tipo": "evento",
+    "disparador": "El goblin del puente da la alarma",
+    "efecto": "Los goblins golpean los soportes de las presas. En el siguiente turno, la riada baja por el pasadizo. Activa la fase 2 de evt_riada_area5.",
+    "revelado": false,
+    "one_shot": true,
+    "tags": [
+      "riada",
+      "presas",
+      "goblins"
+    ]
+  },
+  {
+    "id": "trg_ultimatum_yeemik",
+    "nombre": "Yeemik usa a Sildar como rehén",
+    "lugar_id": "loc_cragmaw_madriguera",
+    "tipo": "evento",
+    "disparador": "Yeemik ve que los PJs obtienen ventaja en el combate",
+    "efecto": "Agarra a Sildar y lo coloca en el borde de la cornisa. Grita '¡tregua, o este humano morirá!'. Propone un trato: matad a Klarg y os daré a Sildar. Si los PJs se niegan, arroja a Sildar por el risco (1d6 contundente, queda a 0 PG).",
+    "revelado": false,
+    "one_shot": true,
+    "tags": [
+      "yeemik",
+      "sildar",
+      "rehen",
+      "negociacion"
+    ]
+  },
+  {
+    "id": "trg_huida_klarg",
+    "nombre": "Klarg huye si matan a su lobo",
+    "lugar_id": "loc_cragmaw_caverna_klarg",
+    "tipo": "cambio_estado",
+    "disparador": "Si Destripador (el lobo de Klarg) muere",
+    "efecto": "Klarg intenta huir trepando por la chimenea al área 3 y escapar del complejo.",
+    "revelado": false,
+    "one_shot": true,
+    "tags": [
+      "klarg",
+      "huida",
+      "lobo"
+    ]
+  },
+  {
+    "id": "trg_aviso_a_klarg",
+    "nombre": "Los goblins del área 7 avisan a Klarg",
+    "lugar_id": "loc_cragmaw_cueva_piscinas",
+    "tipo": "alarma",
+    "disparador": "Si empieza una pelea en el área 7",
+    "efecto": "Un goblin huye al área 8 a avisar a Klarg. Klarg se prepara para emboscar a los PJs.",
+    "revelado": false,
+    "one_shot": true,
+    "tags": [
+      "goblins",
+      "alarma",
+      "klarg"
+    ]
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "campaign_id": "camp_phandelver",
+  "nombre": "La Mina Perdida de Phandelver",
+  "sistema": "D&D 2024 (material original 2014)",
+  "modo": "co-op_2_jugadores",
+  "nivel_inicial": 1,
+  "nivel_final": 5,
+  "version_dataset": "0.2.0",
+  "version_esquema": "2.1",
+  "fuente_pdf": "Caja de Inicio - la mina perdida de phandelver.pdf",
+  "fecha_extraccion": "2026-09-18",
+  "idioma": "es",
+  "cobertura_actual": {
+    "partes_incluidas": [
+      "parte_1_flechas_goblin",
+      "cragmaw_hideout"
+    ],
+    "partes_pendientes": [
+      "parte_2_phandalin",
+      "parte_3_telarana",
+      "parte_4_cueva_oleaje"
+    ]
+  },
+  "sinopsis_general": "Los personajes escoltan un carromato de suministros desde Neverwinter hasta Phandalin para su patrón enano Gundren Buscarrocas. En el camino son emboscados por goblins de la tribu Bocapeñasco, que han capturado a Gundren y a su escolta Sildar Hallwinter. La búsqueda del rastro lleva a los personajes a la Guarida Bocapeñasco, donde deben rescatar a Sildar y descubrir la conexión con un misterioso villano: la Araña Negra.",
+  "gancho_inicial": {
+    "id": "gancho_encontraos_phandalin",
+    "nombre": "Encontraos conmigo en Phandalin",
+    "descripcion": "Gundren Buscarrocas contrata a los PJs para escoltar un carromato de suministros desde Neverwinter hasta Phandalin. Pagará 10 po a cada uno al entregar la carga a Suministros Barthen.",
+    "npc_contratante_id": "npc_gundren",
+    "recompensa": {
+      "oro_por_pj": 10,
+      "xp": 0
+    },
+    "precondiciones": []
+  },
+  "indice_archivos": [
+    "campaign.json",
+    "facciones.json",
+    "condiciones.json",
+    "lugares.json",
+    "npcs.json",
+    "misiones.json",
+    "pistas.json",
+    "bestiario.json",
+    "encuentros.json",
+    "obstaculos.json",
+    "triggers.json",
+    "eventos_temporizados.json",
+    "tablas_aleatorias.json",
+    "objetos.json",
+    "mapas_vtt.json",
+    "estado_partida.json"
+  ],
+  "estado_inicial_party": {
+    "nivel": 1,
+    "oro": 0,
+    "inventario": [],
+    "orden_marcha": [],
+    "guardias_nocturnas": []
+  },
+  "reglas_extraccion": {
+    "descripcion_jugadores": "literal del PDF",
+    "descripcion_dm": "resumen estructurado",
+    "sistema_origen_statblocks": "2014",
+    "conversion_2024": "capa posterior",
+    "valores_ausentes": null
+  }
+}

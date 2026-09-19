@@ -1,0 +1,117 @@
+[
+  {
+    "id": "tab_encuentros_naturaleza",
+    "nombre": "Encuentros en la Naturaleza (Sendero de Triboar)",
+    "contexto": "loc_sendero_triboar",
+    "dado": "d20",
+    "frecuencia": "por_dia_y_por_noche",
+    "resultados": [
+      {
+        "rango": [
+          1,
+          16
+        ],
+        "tipo": "nada",
+        "texto": "Sin encuentro.",
+        "notas": null
+      },
+      {
+        "rango": [
+          17,
+          20
+        ],
+        "tipo": "tirada_secundaria",
+        "texto": "Tira 1d12 y consulta la subtabla.",
+        "notas": "Ver tab_encuentros_naturaleza_d12"
+      }
+    ],
+    "tags": [
+      "viaje",
+      "sendero_triboar"
+    ]
+  },
+  {
+    "id": "tab_encuentros_naturaleza_d12",
+    "nombre": "Subtabla de Encuentros en la Naturaleza",
+    "contexto": "loc_sendero_triboar",
+    "dado": "d12",
+    "frecuencia": "por_encuentro",
+    "resultados": [
+      {
+        "rango": [
+          1,
+          2
+        ],
+        "tipo": "monstruo",
+        "monstruo_id": "mon_estirge",
+        "cantidad": "1d8+2",
+        "notas": "Solo de día. Se sienten atraídas por la luz de las hogueras."
+      },
+      {
+        "rango": [
+          1,
+          3
+        ],
+        "tipo": "monstruo",
+        "monstruo_id": "mon_ghoul",
+        "cantidad": "1d4+1",
+        "notas": "Solo de noche."
+      },
+      {
+        "rango": [
+          3,
+          4
+        ],
+        "tipo": "monstruo",
+        "monstruo_id": "mon_ogro",
+        "cantidad": 1,
+        "notas": "Demasiado estúpido para huir."
+      },
+      {
+        "rango": [
+          5,
+          6
+        ],
+        "tipo": "monstruo",
+        "monstruo_id": "mon_goblin",
+        "cantidad": "1d6+3",
+        "notas": "Saben la ubicación del Castillo Bocapeñasco si son capturados y amenazados. Cada uno lleva 1d10 pc."
+      },
+      {
+        "rango": [
+          7,
+          8
+        ],
+        "tipo": "monstruo",
+        "monstruo_id": "mon_hobgoblin",
+        "cantidad": "1d4+2",
+        "notas": "Buscan activamente a los PJs. Saben la ubicación del Castillo Bocapeñasco pero no la darán a menos que estén hechizados. Uno lleva un boceto de un PJ con '25 po por éste' y un símbolo de araña negra."
+      },
+      {
+        "rango": [
+          9,
+          10
+        ],
+        "tipo": "monstruo",
+        "monstruo_id": "mon_orco",
+        "cantidad": "1d4+2",
+        "notas": "Exploradores de la banda de la Peña del Wyvern."
+      },
+      {
+        "rango": [
+          11,
+          12
+        ],
+        "tipo": "monstruo",
+        "monstruo_id": "mon_oso_lechuza",
+        "cantidad": 1,
+        "notas": "Depredador hambriento, persigue implacablemente."
+      }
+    ],
+    "tags": [
+      "viaje",
+      "sendero_triboar",
+      "encuentros"
+    ]
+  }
+]

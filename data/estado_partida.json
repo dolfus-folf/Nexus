@@ -1,0 +1,105 @@
+{
+  "partida_id": "save_001",
+  "timestamp": "2026-09-18T12:00:00Z",
+  "campaign_id": "camp_phandelver",
+  "party": [
+    {
+      "pj_id": "pj_01",
+      "nombre": "Eldrin Sombraluz",
+      "clase": "Pícaro",
+      "nivel": 1,
+      "pg": 10,
+      "pg_max": 10,
+      "ca": 15,
+      "posicion_vtt": [0, 0],
+      "inventario": [
+        "item_pocion_curacion"
+      ],
+      "condiciones": [],
+      "inspiracion": true
+    },
+    {
+      "pj_id": "pj_02",
+      "nombre": "Kragthor Barbaferro",
+      "clase": "Guerrero",
+      "nivel": 1,
+      "pg": 12,
+      "pg_max": 12,
+      "ca": 16,
+      "posicion_vtt": [0, 0],
+      "inventario": [
+        "item_carro_suministros"
+      ],
+      "condiciones": [],
+      "inspiracion": false
+    }
+  ],
+  "lugar_actual_id": "loc_sendero_triboar_emboscada",
+  "orden_marcha": [
+    {
+      "pj_id": "pj_01",
+      "posicion": 1,
+      "es_delantero": true
+    },
+    {
+      "pj_id": "pj_02",
+      "posicion": 2,
+      "es_delantero": false
+    }
+  ],
+  "guardias_nocturnas": [],
+  "lugares_descubiertos": [
+    "loc_sendero_triboar",
+    "loc_sendero_triboar_emboscada"
+  ],
+  "npcs_conocidos": [
+    "npc_gundren"
+  ],
+  "facciones_reputacion": {
+    "fac_bocapenasco": 0,
+    "fac_arana_negra": 0,
+    "fac_alianza_senores": 0
+  },
+  "misiones_activas": [
+    "quest_rescatar_gundren"
+  ],
+  "misiones_completadas": [],
+  "pistas_reveladas": [],
+  "encuentros_resueltos": [],
+  "obstaculos_resueltos": [],
+  "obstaculos_revelados": [],
+  "triggers_activados": [],
+  "eventos_en_curso": [],
+  "flags_globales": {
+    "flag_emboscada_goblin_resuelta": false,
+    "flag_sildar_rescatado": false,
+    "flag_klarg_derrotado": false,
+    "flag_gundren_rescatado": false,
+    "flag_guarida_limpiada": false,
+    "flag_cueva_oleaje_conocida": false
+  },
+  "tiempo_juego": {
+    "dia": 1,
+    "hora": 12
+  },
+  "diario": [
+    {
+      "id": "entry_001",
+      "dia": 1,
+      "hora": "08:00",
+      "lugar": "Gran Camino / Neverwinter",
+      "titulo": "Salida hacia Phandalin",
+      "texto": "Aceptamos la propuesta de Gundren Buscarrocas de escoltar un carromato cargado con suministros de minería y provisiones hacia la tienda Suministros Barthen en Phandalin por 10 piezas de oro a cada uno. Gundren partió a caballo un día antes junto al guerrero Sildar Hallwinter con prisa por sus asuntos.",
+      "autor": "Kragthor Barbaferro"
+    },
+    {
+      "id": "entry_002",
+      "dia": 1,
+      "hora": "12:00",
+      "lugar": "Sendero de Triboar",
+      "titulo": "Los caballos muertos en el camino",
+      "texto": "Tras medio día de marcha por el Sendero de Triboar, divisamos dos caballos muertos a 50 pies atravesados con flechas negras. Los bosques se cierran en este punto con densos matorrales a ambos lados. Parece una emboscada inminente.",
+      "autor": "Eldrin Sombraluz"
+    }
+  ]
+}

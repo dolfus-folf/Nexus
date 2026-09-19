@@ -1,0 +1,203 @@
+[
+  {
+    "id": "quest_rescatar_gundren",
+    "titulo": "Rescatar a Gundren Buscarrocas",
+    "tipo": "principal",
+    "origen_npc_id": "npc_gundren",
+    "origen_lugar_id": null,
+    "estado_bitacora": "activa",
+    "descubierta": true,
+    "nivel_recomendado": 1,
+    "precondiciones": [
+      "flag_emboscada_goblin_resuelta"
+    ],
+    "descripcion_jugadores": "Vuestro patrón enano Gundren Buscarrocas ha sido capturado por goblins. Debéis seguir su rastro y rescatarlo.",
+    "descripcion_dm": "Gundren fue emboscado y capturado por goblins Bocapeñasco por orden del Rey Grol, quien responde a la Araña Negra. Fue enviado al Castillo Bocapeñasco junto con su mapa. Sildar, su escolta, está prisionero en la Guarida Bocapeñasco.",
+    "pasos": [
+      {
+        "id": "step_quest_gundren_01",
+        "orden": 1,
+        "descripcion": "Investigar el lugar de la emboscada y encontrar el rastro goblin",
+        "completado": false,
+        "opcional": false,
+        "requiere": [],
+        "recompensa_parcial": {
+          "xp": 75,
+          "oro": 0,
+          "objetos": []
+        }
+      },
+      {
+        "id": "step_quest_gundren_02",
+        "orden": 2,
+        "descripcion": "Llegar a la Guarida Bocapeñasco",
+        "completado": false,
+        "opcional": false,
+        "requiere": [
+          "step_quest_gundren_01"
+        ],
+        "recompensa_parcial": {
+          "xp": 75,
+          "oro": 0,
+          "objetos": []
+        }
+      },
+      {
+        "id": "step_quest_gundren_03",
+        "orden": 3,
+        "descripcion": "Rescatar a Sildar Hallwinter de la madriguera goblin",
+        "completado": false,
+        "opcional": false,
+        "requiere": [
+          "step_quest_gundren_02"
+        ],
+        "recompensa_parcial": {
+          "xp": 0,
+          "oro": 0,
+          "objetos": []
+        }
+      },
+      {
+        "id": "step_quest_gundren_04",
+        "orden": 4,
+        "descripcion": "Derrotar o expulsar a Klarg el osgo",
+        "completado": false,
+        "opcional": false,
+        "requiere": [
+          "step_quest_gundren_02"
+        ],
+        "recompensa_parcial": {
+          "xp": 200,
+          "oro": 0,
+          "objetos": []
+        }
+      },
+      {
+        "id": "step_quest_gundren_05",
+        "orden": 5,
+        "descripcion": "Descubrir que Gundren fue llevado al Castillo Bocapeñasco",
+        "completado": false,
+        "opcional": false,
+        "requiere": [
+          "step_quest_gundren_03"
+        ],
+        "recompensa_parcial": {
+          "xp": 0,
+          "oro": 0,
+          "objetos": []
+        }
+      }
+    ],
+    "ramas": [
+      {
+        "condicion": "npc_sildar_muerto",
+        "resultado": "step_quest_gundren_05_via_goblins_capturados"
+      },
+      {
+        "condicion": "npc_gundren_muerto",
+        "resultado": "quest_rescatar_gundren_fallada"
+      }
+    ],
+    "recompensa": {
+      "oro": 0,
+      "objetos": [],
+      "xp_hito": 275,
+      "xp_combate": 0,
+      "reputacion": {
+        "fac_alianza_senores": 1
+      }
+    },
+    "consecuencias": {
+      "exito": [
+        "flag_gundren_rescatado",
+        "flag_cueva_oleaje_conocida"
+      ],
+      "fallo": [
+        "flag_gundren_muerto",
+        "quest_rescatar_gundren_fallada"
+      ]
+    },
+    "tags": [
+      "principal",
+      "rescate",
+      "goblins"
+    ]
+  },
+  {
+    "id": "quest_investigar_guarida",
+    "titulo": "Limpiar la Guarida Bocapeñasco",
+    "tipo": "secundaria",
+    "origen_npc_id": "npc_sildar",
+    "origen_lugar_id": null,
+    "estado_bitacora": "no_descubierta",
+    "descubierta": false,
+    "nivel_recomendado": 1,
+    "precondiciones": [
+      "step_quest_gundren_03"
+    ],
+    "descripcion_jugadores": "Sildar os pide que pongáis fin a las emboscadas goblin limpiando estas cuevas.",
+    "descripcion_dm": "Misión secundaria de limpieza. Requiere eliminar a Klarg y a los goblins principales. Recompensa: 275 PE por explorar la guarida y derrotar a Klarg (hito). Sildar paga 50 po por escolta a Phandalin si se le lleva vivo.",
+    "pasos": [
+      {
+        "id": "step_quest_guarida_01",
+        "orden": 1,
+        "descripcion": "Explorar todas las áreas de la guarida",
+        "completado": false,
+        "opcional": false,
+        "requiere": [],
+        "recompensa_parcial": {
+          "xp": 0,
+          "oro": 0,
+          "objetos": []
+        }
+      },
+      {
+        "id": "step_quest_guarida_02",
+        "orden": 2,
+        "descripcion": "Derrotar a Klarg y a sus aliados",
+        "completado": false,
+        "opcional": false,
+        "requiere": [],
+        "recompensa_parcial": {
+          "xp": 275,
+          "oro": 0,
+          "objetos": []
+        }
+      },
+      {
+        "id": "step_quest_guarida_03",
+        "orden": 3,
+        "descripcion": "Escoltar a Sildar a Phandalin",
+        "completado": false,
+        "opcional": false,
+        "requiere": [],
+        "recompensa_parcial": {
+          "xp": 0,
+          "oro": 50,
+          "objetos": []
+        }
+      }
+    ],
+    "ramas": [],
+    "recompensa": {
+      "oro": 50,
+      "objetos": [],
+      "xp_hito": 275,
+      "xp_combate": 0,
+      "reputacion": {
+        "fac_alianza_senores": 1
+      }
+    },
+    "consecuencias": {
+      "exito": [
+        "flag_guarida_limpiada"
+      ],
+      "fallo": []
+    },
+    "tags": [
+      "secundaria",
+      "limpieza",
+      "goblins"
+    ]
+  }
+]

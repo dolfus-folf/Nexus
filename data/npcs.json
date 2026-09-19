@@ -1,0 +1,261 @@
+[
+  {
+    "id": "npc_gundren",
+    "nombre": "Gundren Buscarrocas",
+    "rol": "patrón enano / buscador de la mina perdida",
+    "tipo": "enano",
+    "actitud_inicial": "aliado",
+    "actitud_actual": "aliado",
+    "estado_vital": "desaparecido",
+    "pg_actuales": 0,
+    "pg_max": 0,
+    "es_miembro_del_grupo": false,
+    "pg_actuales_en_grupo": null,
+    "descubierto": true,
+    "nivel_visibilidad": "visto",
+    "ubicacion_inicial_id": "loc_sendero_triboar",
+    "ubicacion_actual_id": null,
+    "descripcion_jugadores": "Un enano llamado Gundren Buscarrocas os pidió que llevaseis un carromato lleno de provisiones hasta la ciudad de Phandalin. Gundren se mostraba claramente emocionado y más que reservado sobre sus razones para el viaje, dejando caer tan solo que junto a sus hermanos había encontrado algo grande.",
+    "descripcion_dm": "Patrón de los PJs. Descubrió la entrada a la Cueva del Oleaje con sus hermanos. Fue emboscado y capturado por los Bocapeñasco por orden del Rey Grol (que responde a la Araña Negra). Fue enviado al Castillo Bocapeñasco junto con su mapa. No aparece en la Parte 1 salvo como ausencia.",
+    "notas_dm_narrativas": "Enano reservado y emocionado con su descubrimiento. Tiene dos hermanos, Nundro y Tharden. Considera a Elmar Barthen un amigo.",
+    "notas_dm_tacticas": "No combate. Es un NPC a rescatar en Partes posteriores.",
+    "informacion_que_posee": [],
+    "dialogos_clave": [
+      {
+        "id": "dlg_gundren_gancho",
+        "contexto": "gancho inicial",
+        "texto": "Necesito llegar con antelación para ocuparme del negocio. Os pagaré diez piezas de oro a cada uno por escoltar mis suministros a salvo hasta Suministros Barthen."
+      }
+    ],
+    "misiones_relacionadas": [
+      "quest_rescatar_gundren"
+    ],
+    "statblock_id": "mon_plebeyo",
+    "faccion_id": null,
+    "tags": [
+      "patrón",
+      "enano",
+      "desaparecido",
+      "mina_perdida"
+    ]
+  },
+  {
+    "id": "npc_sildar",
+    "nombre": "Sildar Hallwinter",
+    "rol": "guerrero veterano / agente de la Alianza de los Señores",
+    "tipo": "humano",
+    "actitud_inicial": "amistoso",
+    "actitud_actual": "amistoso",
+    "estado_vital": "herido",
+    "pg_actuales": 1,
+    "pg_max": 27,
+    "es_miembro_del_grupo": false,
+    "pg_actuales_en_grupo": null,
+    "descubierto": false,
+    "nivel_visibilidad": "oculto",
+    "ubicacion_inicial_id": "loc_cragmaw_madriguera",
+    "ubicacion_actual_id": "loc_cragmaw_madriguera",
+    "descripcion_jugadores": "Sildar Hallwinter es un hombre con un corazón de oro entrado en la cincuentena que tiene un lugar de honor en la famosa Caballería de los Grifos de la gran ciudad de Aguas Profundas.",
+    "descripcion_dm": "Agente de la Alianza de los Señores. Conoció a Gundren en Neverwinter y accedió a acompañarle. Busca a Iarno Albrek, mago desaparecido en Phandalin. Está prisionero en la cornisa sur del área 6, fuertemente atado, con solo 1 PG. Los goblins le han torturado.",
+    "notas_dm_narrativas": "Habla con voz calmada y educada. Agradecido pero ansioso por llegar a Phandalin. Se ofrece a pagar 50 po por escolta. Quiere investigar el paradero de Iarno.",
+    "notas_dm_tacticas": "No lleva armas ni armadura al ser rescatado. Puede coger la espada corta de un goblin caído o pedir prestada un arma. Tiene la reacción 'Parar' (suma 1d6 a su CA contra un ataque cuerpo a cuerpo). Si se une al grupo, usar reglas de 'PNJs miembros del grupo'.",
+    "informacion_que_posee": [
+      {
+        "pista_id": "pista_gundren_mapa",
+        "revelada": false,
+        "requiere": "ser_rescatado"
+      },
+      {
+        "pista_id": "pista_iarno_desaparecido",
+        "revelada": false,
+        "requiere": "ser_rescatado"
+      },
+      {
+        "pista_id": "pista_cueva_oleaje",
+        "revelada": false,
+        "requiere": "ser_rescatado_y_preguntar"
+      }
+    ],
+    "dialogos_clave": [
+      {
+        "id": "dlg_sildar_rescate",
+        "contexto": "al ser rescatado",
+        "texto": "Gracias, amigos. Temía que mi historia terminara en esta cueva. Gundren fue llevado a un lugar llamado Castillo Bocapeñasco. Debemos encontrarlo."
+      },
+      {
+        "id": "dlg_sildar_iarno",
+        "contexto": "si le preguntan por sus motivos",
+        "texto": "Mi contacto en Phandalin es un mago humano llamado Iarno Albrek. Viajó hasta el pueblo hace dos meses para poner orden. La Alianza no ha recibido noticia alguna de él."
+      }
+    ],
+    "misiones_relacionadas": [
+      "quest_rescatar_gundren",
+      "quest_buscar_iarno",
+      "quest_castillo_bocapenasco"
+    ],
+    "statblock_id": "mon_sildar",
+    "faccion_id": "fac_alianza_senores",
+    "tags": [
+      "aliado",
+      "humano",
+      "noble",
+      "prisionero"
+    ]
+  },
+  {
+    "id": "npc_klarg",
+    "nombre": "Klarg",
+    "rol": "osgo líder de la Guarida Bocapeñasco",
+    "tipo": "osgo",
+    "actitud_inicial": "hostil",
+    "actitud_actual": "hostil",
+    "estado_vital": "vivo",
+    "pg_actuales": 27,
+    "pg_max": 27,
+    "es_miembro_del_grupo": false,
+    "pg_actuales_en_grupo": null,
+    "descubierto": false,
+    "nivel_visibilidad": "oculto",
+    "ubicacion_inicial_id": "loc_cragmaw_caverna_klarg",
+    "ubicacion_actual_id": "loc_cragmaw_caverna_klarg",
+    "descripcion_jugadores": "En mitad de la caverna, todavía brillan los rescoldos de una enorme hoguera. Un osgo de aspecto feroz comparte esta cueva con su sarnoso lobo mascota.",
+    "descripcion_dm": "Osgo con delirios de grandeza. Se ve a sí mismo como un poderoso señor de la guerra. Habla de sí mismo en tercera persona. Recibió órdenes del Rey Grol de interceptar a Gundren. Tiene un cofre con 600 pc, 110 pp, 2 pociones curativas y una estatuilla de jade (40 po).",
+    "notas_dm_narrativas": "No está completamente cuerdo. Frases típicas: '¿Quién se atreve a desafiar a Klarg?' o 'Klarg se construirá un trono con vuestros huesos, escuálidas criaturas'. Sus goblins le resienten por su maltrato.",
+    "notas_dm_tacticas": "Comparte cueva con su lobo Destripador y dos goblins. Si ha sido avisado, se esconde tras las estalagmitas con su lobo y embosca. Si matan al lobo, Klarg intenta huir trepando por la chimenea al área 3 y escapar del complejo. El pozo de fuego causa 1 daño por fuego a quien entre, o 1d6 si cae bocabajo.",
+    "informacion_que_posee": [
+      {
+        "pista_id": "pista_goblins_cragmaw",
+        "revelada": false,
+        "requiere": "ser_capturado_o_hechizado"
+      },
+      {
+        "pista_id": "pista_ordenes_rey_grol",
+        "revelada": false,
+        "requiere": "ser_capturado_o_hechizado"
+      }
+    ],
+    "dialogos_clave": [
+      {
+        "id": "dlg_klarg_bravucon",
+        "contexto": "al ver a los PJs",
+        "texto": "¿Quién se atreve a desafiar a Klarg? ¡Klarg se construirá un trono con vuestros huesos!"
+      }
+    ],
+    "misiones_relacionadas": [
+      "quest_rescatar_gundren"
+    ],
+    "statblock_id": "mon_osgo",
+    "faccion_id": "fac_bocapenasco",
+    "tags": [
+      "jefe_local",
+      "osgo",
+      "hostil",
+      "tesoro"
+    ]
+  },
+  {
+    "id": "npc_yeemik",
+    "nombre": "Yeemik",
+    "rol": "goblin líder, segundo al mando de la guarida",
+    "tipo": "goblin",
+    "actitud_inicial": "hostil",
+    "actitud_actual": "hostil",
+    "estado_vital": "vivo",
+    "pg_actuales": 12,
+    "pg_max": 12,
+    "es_miembro_del_grupo": false,
+    "pg_actuales_en_grupo": null,
+    "descubierto": false,
+    "nivel_visibilidad": "oculto",
+    "ubicacion_inicial_id": "loc_cragmaw_madriguera",
+    "ubicacion_actual_id": "loc_cragmaw_madriguera",
+    "descripcion_jugadores": "Un goblin líder descansa en la zona superior de la cueva, mientras cinco goblins atienden el fuego en la parte baja.",
+    "descripcion_dm": "Goblin con 12 PG (en vez de 7). Quiere expulsar a Klarg y convertirse en jefe. Si ve ventaja de los PJs, agarra a Sildar y grita '¡tregua, o este humano morirá!'. Ofrecerá un trato: matad a Klarg y os daré a Sildar. Si aceptan, luego intentará obligarles a pagar un rescate caro. Si se niegan a parlamentar, arroja a Sildar por el risco (1d6 contundente, queda a 0 PG).",
+    "notas_dm_narrativas": "Ambicioso y traicionero. Sabe que Klarg le maltrata. No es leal a nadie salvo a sí mismo.",
+    "notas_dm_tacticas": "Usa a Sildar como rehén. Si los PJs aceptan el trato, espera que maten a Klarg y luego exige rescate. Si los PJs actúan rápido, pueden estabilizar a Sildar tras la caída.",
+    "informacion_que_posee": [
+      {
+        "pista_id": "pista_goblins_cragmaw",
+        "revelada": false,
+        "requiere": "negociar_o_capturar"
+      },
+      {
+        "pista_id": "pista_klarg_debilidad",
+        "revelada": false,
+        "requiere": "negociar"
+      }
+    ],
+    "dialogos_clave": [
+      {
+        "id": "dlg_yeemik_ultimatum",
+        "contexto": "al ver ventaja de los PJs",
+        "texto": "¡Tregua, o este humano morirá!"
+      },
+      {
+        "id": "dlg_yeemik_trato",
+        "contexto": "si los PJs parlamentan",
+        "texto": "Matad a Klarg en el área 8. Cuando traigáis su cabeza, os daré al humano."
+      }
+    ],
+    "misiones_relacionadas": [
+      "quest_rescatar_gundren"
+    ],
+    "statblock_id": "mon_goblin_lider",
+    "faccion_id": "fac_bocapenasco",
+    "tags": [
+      "goblin",
+      "traidor",
+      "rehen",
+      "ambicioso"
+    ]
+  },
+  {
+    "id": "npc_goblin_capturado",
+    "nombre": "Goblin capturado (genérico)",
+    "rol": "goblin prisionero / fuente de información",
+    "tipo": "goblin",
+    "actitud_inicial": "hostil",
+    "actitud_actual": "receloso",
+    "estado_vital": "vivo",
+    "pg_actuales": 7,
+    "pg_max": 7,
+    "es_miembro_del_grupo": false,
+    "pg_actuales_en_grupo": null,
+    "descubierto": false,
+    "nivel_visibilidad": "oculto",
+    "ubicacion_inicial_id": null,
+    "ubicacion_actual_id": null,
+    "descripcion_jugadores": "Un goblin capturado, temeroso y cobarde.",
+    "descripcion_dm": "Cualquier goblin capturado tras dejarlo inconsciente. Puede ser persuadido para compartir lo que sabe. Conoce: hay <20 goblins en la guarida; su líder es Klarg el osgo, que responde al Rey Grol en el Castillo Bocapeñasco (a 20 millas al noreste, en el bosque de Neverwinter); Klarg recibió un mensajero del Rey Grol diciendo que la Araña Negra pagaba por capturar a Gundren; Gundren y su mapa fueron enviados al Rey Grol; el acompañante humano está en la gruta comedor (área 6).",
+    "notas_dm_narrativas": "Cobarde. Si se le convence, habla rápido y todo lo que sabe.",
+    "notas_dm_tacticas": "No combate si está capturado. Si se le deja libre, huye.",
+    "informacion_que_posee": [
+      {
+        "pista_id": "pista_goblins_cragmaw",
+        "revelada": false,
+        "requiere": "ser_capturado_y_persuadido"
+      },
+      {
+        "pista_id": "pista_ordenes_rey_grol",
+        "revelada": false,
+        "requiere": "ser_capturado_y_persuadido"
+      },
+      {
+        "pista_id": "pista_sildar_prisionero",
+        "revelada": false,
+        "requiere": "ser_capturado_y_persuadido"
+      }
+    ],
+    "dialogos_clave": [],
+    "misiones_relacionadas": [
+      "quest_rescatar_gundren"
+    ],
+    "statblock_id": "mon_goblin",
+    "faccion_id": "fac_bocapenasco",
+    "tags": [
+      "goblin",
+      "informante",
+      "cobarde"
+    ]
+  }
+]

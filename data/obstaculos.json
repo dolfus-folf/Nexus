@@ -1,0 +1,127 @@
+[
+  {
+    "id": "obs_trampa_lazo",
+    "nombre": "Trampa de lazo en el sendero goblin",
+    "tipo": "trampa",
+    "lugar_id": "loc_sendero_goblin",
+    "descubierto": false,
+    "deteccion": {
+      "tipo": "percepcion_pasiva | percepcion_activa",
+      "cd": 12,
+      "habilidad": "Sabiduría (Percepción)",
+      "notas": "El personaje que vaya delante la avista automáticamente si su Percepción Pasiva es 12+."
+    },
+    "resolucion": {
+      "tipo": "salvacion",
+      "cd": 10,
+      "habilidad": "Destreza",
+      "dano": null,
+      "condicion": "neutralizado",
+      "duracion": "hasta que se corte la cuerda (1+ daño cortante)",
+      "notas": "El personaje queda suspendido bocabajo a 10 pies de altura. Si no se le baja con cuidado, sufre 1d6 contundente por caída."
+    },
+    "requiere": [],
+    "one_shot": true,
+    "notas_dm": "Aparece tras 10 minutos siguiendo el rastro desde la emboscada."
+  },
+  {
+    "id": "obs_trampa_foso",
+    "nombre": "Trampa de foso camuflado",
+    "tipo": "trampa",
+    "lugar_id": "loc_sendero_goblin",
+    "descubierto": false,
+    "deteccion": {
+      "tipo": "percepcion_pasiva | percepcion_activa",
+      "cd": 15,
+      "habilidad": "Sabiduría (Percepción)",
+      "notas": "El personaje que vaya delante lo avista automáticamente si su Percepción Pasiva es 15+."
+    },
+    "resolucion": {
+      "tipo": "salvacion",
+      "cd": 10,
+      "habilidad": "Destreza",
+      "dano": "1d6 contundente",
+      "condicion": null,
+      "duracion": null,
+      "notas": "Foso de 6 pies de ancho, 10 pies de profundidad. Los muros no son escarpados, no requiere tirada para salir."
+    },
+    "requiere": [],
+    "one_shot": true,
+    "notas_dm": "Aparece tras 20 minutos siguiendo el rastro desde la emboscada."
+  },
+  {
+    "id": "obs_chimenea_area3",
+    "nombre": "Chimenea natural entre área 3 y área 8",
+    "tipo": "obstaculo_natural",
+    "lugar_id": "loc_cragmaw_perrera",
+    "descubierto": false,
+    "deteccion": {
+      "tipo": "automatica",
+      "cd": null,
+      "habilidad": null,
+      "notas": "Visible al inspeccionar el muro este del área 3."
+    },
+    "resolucion": {
+      "tipo": "prueba_habilidad",
+      "cd": 10,
+      "habilidad": "Fuerza (Atletismo)",
+      "dano": "1d6 contundente por cada 10 pies de caída (si falla por 5+)",
+      "condicion": "bocabajo",
+      "duracion": null,
+      "notas": "Con éxito, el personaje se mueve a la mitad de su velocidad hacia arriba o abajo. Con 6-9, ni gana ni pierde. Con 5 o menos, cae y sufre daño."
+    },
+    "requiere": [],
+    "one_shot": false,
+    "notas_dm": "Chimenea de 30 pies. Es la vía más sigilosa para sorprender a Klarg desde el área 3."
+  },
+  {
+    "id": "obs_cornisa_fragil",
+    "nombre": "Cornisa frágil en el pasadizo oeste",
+    "tipo": "derrumbe",
+    "lugar_id": "loc_cragmaw_pasadizo_escarpado",
+    "descubierto": false,
+    "deteccion": {
+      "tipo": "automatica",
+      "cd": null,
+      "habilidad": null,
+      "notas": "Visible al inspeccionar la cornisa."
+    },
+    "resolucion": {
+      "tipo": "salvacion",
+      "cd": 10,
+      "habilidad": "Destreza",
+      "dano": "2d6 contundente",
+      "condicion": "bocabajo",
+      "duracion": null,
+      "notas": "Cualquier peso >100 libras desestabiliza la cornisa y se derrumba hacia el este. Mitad de daño con salvación exitosa."
+    },
+    "requiere": [],
+    "one_shot": true,
+    "notas_dm": "La cornisa está entre las dos escarpaduras del pasadizo oeste."
+  },
+  {
+    "id": "obs_puente_area5",
+    "nombre": "Puente de madera del área 5",
+    "tipo": "objeto_destruible",
+    "lugar_id": "loc_cragmaw_paso_superior",
+    "descubierto": false,
+    "deteccion": {
+      "tipo": "automatica",
+      "cd": null,
+      "habilidad": null,
+      "notas": "Visible desde el área 4 con luz o visión en la oscuridad."
+    },
+    "resolucion": {
+      "tipo": "ataque",
+      "cd": null,
+      "habilidad": null,
+      "dano": "CA 5, 10 PG",
+      "condicion": null,
+      "duracion": null,
+      "notas": "Si el puente se destruye, las criaturas encima caen: salvación Destreza CD 10, 2d6 contundente, bocabajo. Los que tengan éxito se aferran al puente."
+    },
+    "requiere": [],
+    "one_shot": true,
+    "notas_dm": "Los muros se pueden escalar desde el pasadizo inferior hasta el puente (Fuerza Atletismo CD 15)."
+  }
+]

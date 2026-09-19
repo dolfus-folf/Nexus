@@ -1,0 +1,6 @@
+{
+  "name": "Bitácora de Campaña D&D 2024",
+  "description": "Bitácora interactiva de campaña para La Mina Perdida de Phandelver (D&D 2024) con niebla de guerra y mapa VTT.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

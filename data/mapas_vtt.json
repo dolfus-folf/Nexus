@@ -1,0 +1,225 @@
+[
+  {
+    "mapa_id": "map_region_phandalin",
+    "nombre": "Mapa regional de Phandalin y alrededores",
+    "archivo_imagen": "maps/region_phandalin.webp",
+    "ancho_px": 2048,
+    "alto_px": 1536,
+    "cuadricula": {
+      "tamano_px": 64,
+      "tipo": "hexagonal",
+      "escala": "1 hexágono = 5 millas"
+    },
+    "iluminacion_global": "luz_brillante",
+    "zonas_nodos": [
+      {
+        "zona_id": "zone_region_sendero",
+        "lugar_id": "loc_sendero_triboar",
+        "nombre": "Sendero de Triboar",
+        "poligono": [
+          [400, 800],
+          [1200, 800],
+          [1200, 1000],
+          [400, 1000]
+        ],
+        "punto_entrada": [800, 900],
+        "bloqueada": false
+      },
+      {
+        "zona_id": "zone_region_phandalin",
+        "lugar_id": "loc_phandalin",
+        "nombre": "Phandalin",
+        "poligono": [
+          [700, 1050],
+          [900, 1050],
+          [900, 1150],
+          [700, 1150]
+        ],
+        "punto_entrada": [800, 1100],
+        "bloqueada": false
+      },
+      {
+        "zona_id": "zone_region_cragmaw_hideout",
+        "lugar_id": "loc_cragmaw_hideout",
+        "nombre": "Guarida Bocapeñasco",
+        "poligono": [
+          [500, 950],
+          [600, 950],
+          [600, 1000],
+          [500, 1000]
+        ],
+        "punto_entrada": [550, 975],
+        "bloqueada": false
+      }
+    ],
+    "tokens_iniciales": [],
+    "capas": ["terreno", "nodos", "dm"],
+    "version": "1.0"
+  },
+  {
+    "mapa_id": "map_road_to_phandalin",
+    "nombre": "Camino a Phandalin (emboscada goblin)",
+    "archivo_imagen": "maps/road_to_phandalin.webp",
+    "ancho_px": 1024,
+    "alto_px": 1024,
+    "cuadricula": {
+      "tamano_px": 32,
+      "tipo": "cuadrada",
+      "escala": "1 casilla = 10 pies"
+    },
+    "iluminacion_global": "luz_brillante",
+    "zonas_nodos": [
+      {
+        "zona_id": "zone_emboscada",
+        "lugar_id": "loc_sendero_triboar_emboscada",
+        "nombre": "Lugar de la emboscada",
+        "poligono": [
+          [300, 400],
+          [700, 400],
+          [700, 700],
+          [300, 700]
+        ],
+        "punto_entrada": [500, 550],
+        "bloqueada": false
+      },
+      {
+        "zona_id": "zone_sendero_goblin",
+        "lugar_id": "loc_sendero_goblin",
+        "nombre": "Sendero goblin",
+        "poligono": [
+          [700, 200],
+          [900, 200],
+          [900, 400],
+          [700, 400]
+        ],
+        "punto_entrada": [800, 300],
+        "bloqueada": false
+      }
+    ],
+    "tokens_iniciales": [],
+    "capas": ["terreno", "objetos", "dm"],
+    "version": "1.0"
+  },
+  {
+    "mapa_id": "map_cragmaw_hideout",
+    "nombre": "Guarida Bocapeñasco",
+    "archivo_imagen": "maps/cragmaw_hideout.webp",
+    "ancho_px": 1024,
+    "alto_px": 768,
+    "cuadricula": {
+      "tamano_px": 32,
+      "tipo": "cuadrada",
+      "escala": "1 casilla = 5 pies"
+    },
+    "iluminacion_global": "oscuridad",
+    "zonas_nodos": [
+      {
+        "zona_id": "zone_cragmaw_01",
+        "lugar_id": "loc_cragmaw_entrada",
+        "nombre": "Entrada de la cueva",
+        "poligono": [
+          [100, 500],
+          [300, 500],
+          [300, 700],
+          [100, 700]
+        ],
+        "punto_entrada": [200, 600],
+        "bloqueada": false
+      },
+      {
+        "zona_id": "zone_cragmaw_02",
+        "lugar_id": "loc_cragmaw_puesto_goblin",
+        "nombre": "Puesto goblin",
+        "poligono": [
+          [300, 500],
+          [450, 500],
+          [450, 650],
+          [300, 650]
+        ],
+        "punto_entrada": [375, 575],
+        "bloqueada": false
+      },
+      {
+        "zona_id": "zone_cragmaw_03",
+        "lugar_id": "loc_cragmaw_perrera",
+        "nombre": "Perrera",
+        "poligono": [
+          [300, 400],
+          [450, 400],
+          [450, 500],
+          [300, 500]
+        ],
+        "punto_entrada": [375, 450],
+        "bloqueada": false
+      },
+      {
+        "zona_id": "zone_cragmaw_04",
+        "lugar_id": "loc_cragmaw_pasadizo_escarpado",
+        "nombre": "Pasadizo escarpado",
+        "poligono": [
+          [450, 500],
+          [600, 500],
+          [600, 650],
+          [450, 650]
+        ],
+        "punto_entrada": [525, 575],
+        "bloqueada": false
+      },
+      {
+        "zona_id": "zone_cragmaw_05",
+        "lugar_id": "loc_cragmaw_paso_superior",
+        "nombre": "Paso superior",
+        "poligono": [
+          [450, 300],
+          [650, 300],
+          [650, 500],
+          [450, 500]
+        ],
+        "punto_entrada": [550, 400],
+        "bloqueada": false
+      },
+      {
+        "zona_id": "zone_cragmaw_06",
+        "lugar_id": "loc_cragmaw_madriguera",
+        "nombre": "Madriguera goblin",
+        "poligono": [
+          [100, 200],
+          [400, 200],
+          [400, 400],
+          [100, 400]
+        ],
+        "punto_entrada": [250, 300],
+        "bloqueada": false
+      },
+      {
+        "zona_id": "zone_cragmaw_07",
+        "lugar_id": "loc_cragmaw_cueva_piscinas",
+        "nombre": "Cueva de las piscinas gemelas",
+        "poligono": [
+          [650, 200],
+          [900, 200],
+          [900, 500],
+          [650, 500]
+        ],
+        "punto_entrada": [775, 350],
+        "bloqueada": false
+      },
+      {
+        "zona_id": "zone_cragmaw_08",
+        "lugar_id": "loc_cragmaw_caverna_klarg",
+        "nombre": "Caverna de Klarg",
+        "poligono": [
+          [650, 500],
+          [950, 500],
+          [950, 750],
+          [650, 750]
+        ],
+        "punto_entrada": [800, 625],
+        "bloqueada": false
+      }
+    ],
+    "tokens_iniciales": [],
+    "capas": ["terreno", "objetos", "dm"],
+    "version": "1.0"
+  }
+]

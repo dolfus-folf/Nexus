@@ -1,0 +1,62 @@
+[
+  {
+    "id": "cond_apresado",
+    "nombre": "Apresado",
+    "descripcion": "Una criatura apresada no puede moverse. La condición termina si el apresador queda incapacitado o si la criatura es movida fuera del alcance."
+  },
+  {
+    "id": "cond_asustado",
+    "nombre": "Asustado",
+    "descripcion": "Una criatura asustada tiene desventaja en pruebas de característica y tiradas de ataque mientras la fuente del miedo esté en línea de visión. No puede acercarse voluntariamente a la fuente."
+  },
+  {
+    "id": "cond_bocabajo",
+    "nombre": "Bocabajo",
+    "descripcion": "La única forma de moverse es gatear o levantarse. Tiene desventaja en tiradas de ataque. Un ataque cuerpo a cuerpo contra ella tiene ventaja. Un ataque a distancia tiene desventaja."
+  },
+  {
+    "id": "cond_cegado",
+    "nombre": "Cegado",
+    "descripcion": "No puede ver y falla automáticamente cualquier prueba que requiera vista. Tiene desventaja en tiradas de ataque. Los ataques contra ella tienen ventaja."
+  },
+  {
+    "id": "cond_encantado",
+    "nombre": "Encantado",
+    "descripcion": "No puede atacar al encantador ni objetivos designados por él. El encantador tiene ventaja en interacciones sociales con ella."
+  },
+  {
+    "id": "cond_envenenado",
+    "nombre": "Envenenado",
+    "descripcion": "Tiene desventaja en tiradas de ataque y pruebas de característica."
+  },
+  {
+    "id": "cond_incapacitado",
+    "nombre": "Incapacitado",
+    "descripcion": "No puede realizar acciones ni reacciones."
+  },
+  {
+    "id": "cond_invisible",
+    "nombre": "Invisible",
+    "descripcion": "No puede ser visto sin ayuda de magia o sentidos especiales. Tiene ventaja en tiradas de ataque. Los ataques contra ella tienen desventaja."
+  },
+  {
+    "id": "cond_neutralizado",
+    "nombre": "Neutralizado",
+    "descripcion": "No puede moverse ni realizar acciones. Puede hablar y respirar. Equivale a 'inmovilizado' en 2024."
+  },
+  {
+    "id": "cond_paralizado",
+    "nombre": "Paralizado",
+    "descripcion": "Está incapacitada y no puede moverse ni hablar. Falla salvaciones de Fuerza y Destreza. Ataques contra ella tienen ventaja. Ataques cuerpo a cuerpo a 5 pies son críticos."
+  },
+  {
+    "id": "cond_petrificado",
+    "nombre": "Petrificado",
+    "descripcion": "Transformada en piedra. Incapacitada, no puede moverse ni hablar, no es consciente de su entorno. Resistencia a todo daño. Inmune a veneno y enfermedad."
+  },
+  {
+    "id": "cond_tumbado",
+    "nombre": "Tumbado",
+    "descripcion": "La única forma de moverse es gatear o levantarse. Desventaja en ataques. Ataques cuerpo a cuerpo contra ella tienen ventaja, a distancia tienen desventaja."
+  }
+]
